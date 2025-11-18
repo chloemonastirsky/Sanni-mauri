@@ -226,3 +226,258 @@ header nav div, header nav{
     left: 0;
   }
   
+  
+  /* --- Botón cerrar --- */
+  .close {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  
+  /* --- Botón abrir modal --- */
+  #openModalBtn {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  
+  #openModalBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* fin Menu */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* --- MEDIA QUERY (MÓVIL) --- */
+  @media (max-width: 600px) {
+  
+  
+  
+  
+  header nav div, header nav{
+    background-color: #4A963F;
+  }
+  
+  
+  
+  
+  /* --- ESTILO GENERAL --- */
+  nav.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  
+  
+  /* Contenedor izquierdo: menú + logo */
+  .left-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left:1px;
+  }
+  
+  
+  
+  
+  /* Contenedor derecho: íconos */
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right:3px;
+  }
+  
+  
+  
+  
+  /* Íconos y logo en escritorio */
+  .menu, .lupa,  .usuario {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .usuario{
+    width: 100%;
+  }
+  
+  
+  
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  
+  
+  
+  /* Quitar el triángulo de bootstrap del dropdown */
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+  
+  
+  
+  
+  footer {
+    background-color: #4A963F;
+    padding: 20px 0;
+    /* display: flex; */
+    /* justify-content: center; */
+  }
+  
+  
+  
+  
+  .footer-container {
+   
+    display: grid;
+    grid-template-columns: 1fr;
+  justify-items: center;
+  /* text-align: center; */
+  margin: auto;
+    /* flex-direction: column; por defecto: mobile */
+    /* align-items: right; */
+    text-align: center;
+    /* gap:2%; */
+    /* width: 90%; */
+    /* margin-left: 40px; */
+  }
+  
+  
+  
+  
+  /* Logo */
+  .logo-footer {
+    width: 120px;
+    height: auto;
+  }
+  
+  
+  
+  
+  /* Íconos de redes */
+  .footer-redes {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  .ig, .tt {
+    width: 35px;
+    height: 35px;
+    /* cursor: pointer; */
+  }
+  
+  
+  
+  
+  .x {
+    width: 50px;
+    height: 35px;
+   
+  }
+  
+  
+  
+  
+  /* Teléfono */
+  .footer-numero {
+    display: flex;
+    /* align-items: right; */
+    /* justify-content: right; */
+    gap: 0px;
+    margin-top: 10px;
+    justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  
+  
+  
+   
+  }
+  
+  
+  
+  
+  .footer-numero img {
+    width: 20px;
+    height: 20px;
+   
+  }
+  
+  
+  
+  
+  .footer-numero h6 {
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  
+  
+  
+  .redes-numero{
+   /* margin-left: 20px; */
+    /* margin-top:15px; */
+    margin-top: 10px;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  /* margin-right:120px; */
+  margin-left: 0 !important;
+  }
+  }
+  
