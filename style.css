@@ -1,0 +1,8 @@
+.contenedorFavoritos{
+    width: 20%;
+    border:  1px solid black;
+}
+
+.contenedorFavoritos img{
+    width: 100%;
+}
