@@ -264,13 +264,7 @@ header nav div, header nav{
     background: #f5f5f5;
 }
 
-/* Colores propios de esta sección */
-.cartaResto,
-.cartaProducto {
-    --verde-claro: #e8f5e9;
-    --verde-medio: #81c784;
-    --verde-oscuro: #4caf50;
-}
+
 
 /* ====== TARJETA DEL RESTAURANTE ====== */
 .cartaResto {
@@ -280,7 +274,7 @@ header nav div, header nav{
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     max-width: 420px;
     margin: 0 auto 16px;
-    background: var(--verde-claro);
+    background: #fff8e8;
     text-align: center;
 }
 
@@ -395,7 +389,7 @@ estrellas {
     font-size: 20px;
 }
 
-.icons img{
+.icon img, .iconosPlato img{
   width: 40px;
   height: auto;
 }
@@ -604,49 +598,221 @@ estrellas {
   
   
   
+/* ============================================================= */
+/* ====================== PANTALLA DE LOGIN ===================== */
+/* ============================================================= */
+
+
+
+  
+  /* FAVORITOS */
+  /* ============================================================= */
+/* ====================== TUS FAVORITOS ======================= */
+/* ============================================================= */
+
+.favoritos-page {
+  background-color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Título + flecha atrás */
+.header-favoritos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+.flecha-volver {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.header-favoritos h2 {
+  font-size: 28px;
+  color: #4caf50;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Cada plato favorito */
+.plato-favorito {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  gap: 16px;
+}
+
+.foto-plato-fav {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.info-plato-fav {
+  flex-grow: 1;
+}
+.info-plato-fav h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.iconos-kosher {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.iconos-kosher img {
+  width: 28px;
+  height: 28px;
+}
+.precio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4caf50;
+  margin: 0;
+}
+
+.corazon-rojo {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+}
+
+
+
+.pagina-notificaciones {
+            max-width: 420px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px 20px 60px;
+        }
+
+        /* Flecha + Título (todo dentro del contenido, no del header) */
+        .barra-superior-notif {
+            position: relative;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 15px;
+        }
+
+        .flecha-notif {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -20px;
+            width: 40px;
+            height: 40px;
+            background-color: #4A963F;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .titulo-notif {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Cada notificación */
+        .notif-caja {
+            background-color: #4A963F;
+            color: white;
+            padding: 20px 22px;
+            border-radius: 24px;
+            margin-bottom: 20px;
+            position: relative;
+            box-shadow: 0 6px 15px rgba(74,150,63,0.25);
+            font-size: 16px;
+            line-height: 1.55;
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .icono-gift {
+            position: absolute;
+            left: 18px;
+            top: 20px;
+            font-size: 32px;
+        }
+
+        .texto-gift {
+            margin-left: 58px;
+        }
+
+        .fecha-gift {
+            margin-top: 12px;
+            font-size: 14px;
+            text-align: right;
+            opacity: 0.9;
+        }
+
+        /* ============================================================= */
+/* ================ REGISTRO Y LOGIN – CORREGIDO =============== */
+/* ============================================================= */
+
+
+/* ============================================================= */
+/* ================ LOGIN + REGISTRO – VERSIÓN FINAL ============= */
+/* ============================================================= */
+
 .login-page {
   background-color: white;
-  padding: 40px 20px;
+  padding: 50px 20px;
   min-height: 100vh;
   text-align: center;
+  box-sizing: border-box;
 }
 
 /* Logo grande arriba */
 .logo-grande {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .logo-grande img {
-  width: 220px;
+  width: 240px;
   height: auto;
 }
 
-/* Tarjeta blanca con sombra suave */
+/* Tarjeta beige (igual en desktop y móvil) */
 .tarjeta-login {
-  background-color: #f8fff8;
-  max-width: 380px;
+  background-color: #fff8e8;
+  max-width: 400px;
   margin: 0 auto;
-  padding: 40px 30px;
-  border-radius: 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 50px 40px;
+  border-radius: 36px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
-/* Cada campo (Mail / Contraseña) */
+/* Campos */
 .campo {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   text-align: left;
 }
 .campo label {
   display: block;
-  font-size: 16px;
+  font-size: 17px;
   color: #333;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 .campo input {
   width: 100%;
-  padding: 16px;
-  border: 2px solid #ddd;
-  border-radius: 16px;
+  padding: 18px;
+  border: 2px solid #cccccc;
+  border-radius: 18px;
   font-size: 16px;
   background-color: white;
   box-sizing: border-box;
@@ -656,183 +822,57 @@ estrellas {
   border-color: #4caf50;
 }
 
-/* ¿Olvidaste tu contraseña? */
-.olvidaste {
-  display: block;
-  margin: 16px 0 24px;
-  color: #4caf50;
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* Botón verde grande */
+/* Botón verde – 100% ancho siempre */
 .btn-verde {
-  width: 100%;
-  padding: 18px;
+  width: 100% !important;
+  padding: 20px;
   background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
-/* Mensaje de error */
-.error {
-  color: red;
-  font-size: 14px;
-  margin: 10px 0;
-  height: 20px;
-}
-
-/* Sección "¿No tienes cuenta?" */
+/* Sección "¿Ya tenés cuenta?" */
 .no-cuenta {
-  margin-top: 30px;
+  margin-top: 40px;
+  text-align: center;
 }
 .no-cuenta p {
-  color: #666;
-  font-size: 16px;
-  margin-bottom: 12px;
+  color: #555;
+  font-size: 17px;
+  margin-bottom: 16px;
 }
-.btn-registrarse {
+.registrarse {
   width: 100%;
-  padding: 16px;
-  background-color: white;
+  padding: 15px;
+  background-color: transparent;
   color: #4caf50;
   border: 3px solid #4caf50;
   border-radius: 30px;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
   cursor: pointer;
 }
+      
+* 
 
-/* ------------------------------------- */
-/* ESTILOS BASE: DESKTOP FIRST (para pantallas >= 768px) */
-/* ------------------------------------- */
-
-:root {
-  --color-verde-claro: #A2D065; 
-  --color-verde-oscuro: #5C8C38;
-  --color-crema: #FCF4E9;
-  --color-texto-principal: #333;
-  --color-sombra: rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos Generales (Desktop) */
-body {
-  font-family: Arial, sans-serif; 
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex-grow: 1; 
-  width: 100%;
-  display: flex;
-  justify-content: center; 
-  align-items: center; /* Alineación central en desktop */
-  padding: 50px 0; /* Buen espacio vertical en desktop */
-}
-
-.contenedor-principal-registro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 450px; /* Ancho cómodo para desktop */
-}
-
-.logo-superior img {
-  max-width: 180px; /* Tamaño grande para desktop */
-  margin-bottom: 25px;
-}
-
-/* FORMULARIO DESKTOP */
-.tarjeta-formulario-datos {
-  background-color: var(--color-crema);
-  border-radius: 15px; 
-  padding: 30px; /* Padding amplio */
-  width: 100%;
-  box-shadow: 0 4px 8px var(--color-sombra);
-  text-align: center;
-}
-
-.tarjeta-formulario-datos .etiqueta-campo {
-  display: block; 
-  text-align: left;
-  margin-top: 15px; 
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 1em; /* Fuente cómoda */
-  padding: 0; 
-}
-
-.tarjeta-formulario-datos input {
-  display: block; 
-  width: 100%;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 20px; 
-  box-sizing: border-box; 
-  font-size: 1em;
-  outline: none;
-}
-
-.boton-verde-oscuro-registro {
-  display: block; 
-  background-color: var(--color-verde-oscuro);
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 30px;
-  font-size: 1.1em;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 30px;
-  width: 100%;
-}
-
-.texto-cuenta-existente {
-  font-size: 0.9em;
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-
-.boton-verde-claro-login {
-  display: inline-block; 
-  background-color: var(--color-verde-claro);
-  color: white;
-  text-decoration: none; 
-  padding: 8px 20px;
-  border-radius: 30px;
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-  
-  
-  
-  
-  
   
   /* --- MEDIA QUERY (MÓVIL) --- */
   @media (max-width: 600px) {
+
   
-  
+  .pagina-notificaciones { 
+    padding: 15px 15px 60px; }
+        
   
   
   header nav div, header nav{
     background-color: #4A963F;
   }
-  
-  
   
   
   /* --- ESTILO GENERAL --- */
@@ -964,6 +1004,9 @@ main {
    
   }
   
+  .platoResto{
+    text-decoration: none;
+  }
   
   
   
@@ -983,9 +1026,6 @@ main {
   
    
   }
-  
-  
-  
   
   .footer-numero img {
     width: 20px;
@@ -1022,76 +1062,120 @@ main {
     color:black;
   }
 
+ /* a partir de aca inicio de sesion */
  
     .login-page {
-        padding: 30px 16px;
+        padding: 30px 15px;
     }
     .logo-grande img {
         width: 180px;
     }
     .tarjeta-login {
-        padding: 30px 20px;
-        border-radius: 24px;
+        padding: 40px 25px;
+        border-radius: 28px;
     }
     .campo input {
-        padding: 14px;
-        font-size: 15px;
+        padding: 16px;
     }
     .btn-verde,
-    .btn-registrarse {
-        padding: 16px;
-        font-size: 18px;
+    .registrarse {
+        padding: 15px;
+        font-size: 19px;
+    }
+   
+
+    
+   
+   
+    .favoritos-page {
+        padding: 15px;
+    }
+    .header-favoritos {
+        margin-bottom: 20px;
+    }
+    .header-favoritos h2 {
+        font-size: 24px;
+    }
+    .flecha-volver {
+        width: 36px;
+        height: 36px;
+    }
+    .plato-favorito {
+        padding: 14px;
+        border-radius: 16px;
+    }
+    .foto-plato-fav {
+        width: 90px;
+        height: 90px;
+    }
+    .info-plato-fav h3 {
+        font-size: 17px;
+    }
+    .iconos-kosher img {
+        width: 24px;
+        height: 24px;
+    }
+    .precio {
+        font-size: 19px;
+    }
+    .corazon-rojo {
+        width: 36px;
+        height: 36px;
     }
 
-    @media (max-width: 767px) {
-    
-      main {
-          align-items: flex-start; /* Vuelve a alinear arriba en móvil */
-          padding: 20px 0; /* Reduce el padding vertical */
-      }
       
-      .contenedor-principal-registro {
-          max-width: 90%; /* Ocupa casi todo el ancho disponible */
-          padding: 0 10px; /* Pequeño padding horizontal para los bordes */
-      }
   
-      .logo-superior img {
-          max-width: 150px; /* Reduce el logo */
-          margin-bottom: 15px;
-      }
-  
-      /* FORMULARIO MOBILE */
-      .tarjeta-formulario-datos {
-          padding: 20px; /* Reduce el padding interno */
-      }
-      
-      .tarjeta-formulario-datos .etiqueta-campo {
-          margin-top: 10px; /* Reduce el margen */
-          font-size: 0.9em; 
-      }
-  
-      .tarjeta-formulario-datos input {
-          padding: 8px 12px; /* Reduce el padding del campo */
-      }
-  
-      .boton-verde-oscuro-registro {
-          padding: 10px;
-          font-size: 1em;
-          margin-top: 20px;
-      }
-  
-      .texto-cuenta-existente {
-          font-size: 0.85em;
-          margin-top: 15px;
-      }
-  
-      .boton-verde-claro-login {
-          padding: 6px 15px;
-          font-size: 0.9em;
-          margin-bottom: 10px;
-      }
-  }
 
   
+
+        /* Responsive mobile */
+        
+            #modalCupon {
+                width: 92%;
+                margin-left: -0.5%;
+                margin-top: px;
+                padding: 30px 20px;
+            }
+            .qr-cupon {
+                width: 200px;
+                height: 200px;
+            }
+            .codigo-cupon {
+                font-size: 34px;
+                letter-spacing: 3px;
+            }
+
+            /* ============================================================= */
+/* ======================== MÓVIL = 600px ======================= */
+/* ============================================================= */
+
+  .login-page {
+      /* padding: 30px 15px; */
   }
+  .logo-grande img {
+      width: 180px;
+  }
+  .tarjeta-login {
+      padding: 40px 25px;
+      border-radius: 28px;
+  }
+  .campo {
+      margin-bottom: 24px;
+  }
+  .campo input {
+      padding: 16px;
+      font-size: 15px;
+  }
+  .btn-verde,
+  .registrarse {
+      padding: 16px;
+      font-size: 19px;
+  }
+  .no-cuenta p {
+      margin: 30px 0 14px;
+  
+}
+        
+          
+  
   

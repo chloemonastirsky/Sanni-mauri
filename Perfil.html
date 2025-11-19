@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,92 +7,94 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 <body>
-    <header>
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-       
-            <!-- IZQUIERDA -->
-            <div class="left-section">
-              <div class="dropdown">
-                <button class="btn dropdown-toggle" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                 <img class="menu" src="imagenes/iconoMenu.png" alt="Menú">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="menuDropdown">
-                  <li><a class="dropdown-item" href="#">Inicio</a></li>
-                 
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href='Url.Action("favoritos","Home")'>Favoritos</a></li>
-                  <li><a class="dropdown-item" href='Url.Action("restaurantes","Home")'>Restaurantes</a></li>
-                  <li><a class="dropdown-item" href='Url.Action("restricciones","Home")'>Restricciones</a></li>
-                  <li><a class="dropdown-item" href='Url.Action("notificaciones","Home")'>Notificaciones</a></li>
-                  <li><a class="dropdown-item" href='Url.Action("promociones","Home")'>Promociones</a></li>
-                  <li><a class="dropdown-item" href='Url.Action("chatbot","Home")'>Chat</a></li>
-                </ul>
-              </div>
-              <img class="logo" src="imagenes/LOGO TERMINADO SANNI LISTO.png" alt="Logo">
-            </div>
-       
-            <!-- DERECHA -->
-            <div class="right-section">
-              <img class="lupa" href="#" src="imagenes/iconoLupa.png" alt="Buscar">
+  <header>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+   
+        <!-- IZQUIERDA -->
+        <div class="left-section">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+             <img class="menu" src="imagenes/iconoMenu.png" alt="Menú">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+              <li><a class="dropdown-item" href="#">Inicio</a></li>
              
-              <img class="usuario" href="#" src="imagenes/iconoUsuario.webp" alt="Usuario">
-            </div>
-       
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href='Url.Action("favoritos","Home")'>Favoritos</a></li>
+              <li><a class="dropdown-item" href='Url.Action("restaurantes","Home")'>Restaurantes</a></li>
+              <li><a class="dropdown-item" href='Url.Action("restricciones","Home")'>Restricciones</a></li>
+              <li><a class="dropdown-item" href='Url.Action("notificaciones","Home")'>Notificaciones</a></li>
+              <li><a class="dropdown-item" href='Url.Action("promociones","Home")'>Promociones</a></li>
+              <li><a class="dropdown-item" href='Url.Action("chatbot","Home")'>Chat</a></li>
+            </ul>
           </div>
-        </nav>
+          <img class="logo" src="imagenes/LOGO TERMINADO SANNI LISTO.png" alt="Logo">
+        </div>
+   
+        <!-- DERECHA -->
+        <div class="right-section">
+          <img class="lupa" href="#" src="imagenes/iconoLupa.png" alt="Buscar">
+         
+          <img class="usuario" href="#" src="imagenes/iconoUsuario.webp" alt="Usuario">
+        </div>
+   
+      </div>
+    </nav>
+   
+   
        
-       
-           
-      </header>
+  </header>
+
+  <main class="main-perfil">
+    <section class="tarjeta-perfil">
+    <div class="perfil-contenido">
+    <div class="perfil-foto">
+  <img src="imagenes/iconoUsuario.webp" alt="foto usuario">
+   </div>
+   <div class="perfil-info">
+    <h2>Felipe Cohen</h2>
+    <p>País: Argentina</p>
+   </div>
+    </div>
+    </section>
+   
+    <nav class="opciones-perfil">
+    <a href="#" class="btn-opcion">Información del perfil</a>
+   <a href="#" class="btn-opcion">Notificaciones</a>
+    <a href="#" class="btn-opcion">Favoritos</a>
+    <a href="#" class="btn-opcion">Cerrar sesión</a>
+  </nav>
+   </main>
   
-    <main>
-        <section class="profile-card">
-            <!-- Foto del usuario -->
-            <img src="x" alt="foto usuario"> <!-- Aca va la foto o icono del usuario -->
-
-            <!-- Información del usuario -->
-            <div class="profile-info">
-                <h2>user</h2>
-                <p>País</p>
-            </div>
-        </section>
-
-        <!-- Botones del perfil -->
-        <nav class="profile-options">
-            <button>Información del perfil</button>
-            <button>Notificaciones</button>
-            <button>Favoritos</button>
-            <button>Cerrar sesión</button>
-        </nav>
-    </main>
     <footer>
-        <div class="footer-container">
-          <div class="footer-logo">
-            <img class="logo-footer" src="imagenes/logo simplificado editado.png" alt="Logo">
-          </div>
-     
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img class="logo-footer" src="imagenes/logo simplificado editado.png" alt="Logo">
+        </div>
+   
 
 
 
 
-          <div class="redes-numero">
-          <div class="footer-redes">
-            <img class="ig" src="imagenes/ig.png" alt="Instagram">
-            <img class="x" src="imagenes/x.png" alt="X">
-            <img class="tt" src="imagenes/tt.png" alt="TikTok">
-          </div>
-     
-          <div class="footer-numero">
-            <img class="telefono" src="imagenes/telefono.png" alt="Teléfono">
-            <h6>+54 9 11 6289-1434</h6>
-          </div>
+        <div class="redes-numero">
+        <div class="footer-redes">
+          <img class="ig" src="imagenes/ig.png" alt="Instagram">
+          <img class="x" src="imagenes/x.png" alt="X">
+          <img class="tt" src="imagenes/tt.png" alt="TikTok">
+        </div>
+   
+        <div class="footer-numero">
+          <img class="telefono" src="imagenes/telefono.png" alt="Teléfono">
+          <h6>+54 9 11 6289-1434</h6>
         </div>
       </div>
-      </footer>
-
-      <script src="script.js"></script>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

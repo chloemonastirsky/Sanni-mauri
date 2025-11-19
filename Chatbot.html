@@ -48,21 +48,35 @@
       </header>
   
     <main>
-            <section>
-    <div>
-        <a href='Url.Action("")'></a>
-        <img src="" alt="">
-        <h3>Limonchetti</h3>
+         <div class="chat-header">
+        <div class="chat-flecha" onclick="history.back()">Back</div>
+        <h1 class="chat-titulo">
+            <img src="imagenes/limonchetti-logo.jpg" alt="Limonchetti" class="chat-logo-peque">
+            Limonchetti
+        </h1>
     </div>
 
-    <div>
-        <!-- mensajes -->
-    </div>
+    <!-- MAIN CON MENSAJES + TEXTAREA -->
+    <main class="chat-contenido">
 
-    <form action="" method="post">
-        <textarea name="descripcion" id="textArea" cols="150" rows="2"></textarea>
-    </form>
-</section>
+        <!-- Mensaje del bot -->
+        <div class="msg-bot">
+            ¡Hola!  
+            ¿En qué podemos ayudarte hoy? Déjanos saber qué necesitas y estaremos encantados de asistirte.
+        </div>
+
+        <!-- Mensaje del usuario -->
+        <div class="msg-user">
+            Buenos días, he tenido problemas con la cancelación de un pedido que hice ayer. La compra no se efectuó pero la notificación saltó.
+        </div>
+
+        <!-- Área de escritura al final del main -->
+        <div class="chat-escribir">
+            <div class="chat-input-wrapper">
+                <textarea class="chat-textarea" placeholder="Escribinos tu duda" rows="1"></textarea>
+                <div class="chat-btn-enviar">Send</div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -88,6 +102,7 @@
         </div>
       </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
       <script src="script.js"></script>
 </body>
