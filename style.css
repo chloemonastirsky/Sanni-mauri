@@ -568,7 +568,39 @@ estrellas {
 .bebida .fotoPlato, 
 .postre .fotoPlato { width: 90px; height: 120px; }
 
-  
+  /* Tu overlay ya existe, solo lo reutilizamos con un id específico */
+#overlayCupon.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Reutilizamos tu clase .modal pero la centramos y la hacemos bonita */
+#modalCupon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 380px;
+    background-color: #fff;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 1001;
+    left: -300px; /* empieza fuera como tu modal lateral */
+}
+
+#modalCupon.active {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+}
   
   
   
@@ -778,5 +810,6 @@ estrellas {
     /* background-color: rgba(0, 0, 0, 0.5); */
     color:black;
   }
+  
   }
   
