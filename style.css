@@ -395,6 +395,11 @@ estrellas {
     font-size: 20px;
 }
 
+.icons img{
+  width: 40px;
+  height: auto;
+}
+
 .desc {
     color: #555;
     line-height: 1.5;
@@ -767,6 +772,11 @@ estrellas {
   justify-items: center;
   /* margin-right:120px; */
   margin-left: 0 !important;
+  }
+
+  .sectionPlato{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color:black;
   }
   }
   
