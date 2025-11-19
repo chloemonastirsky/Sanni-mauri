@@ -48,136 +48,207 @@
   </header>
 
     <main>
-            <!-- Sección: COMIDAS -->
-            <section id="comidas">
-                <h2>Comidas</h2>
+    <!-- TARJETA SUPERIOR DEL RESTAURANTE (igual que antes) -->
+    <section class="cartaResto">
+        <h2>Urban Green</h2>
+        <div class="elementos">
+            <estrellas>★★★★★</estrellas>
             
-                <!-- Comida 1 -->
-                <article>
-                  <!-- acá va la foto del plato -->
-                  <img src="" alt="">
-                  <!-- acá va el nombre del plato -->
-                  <h3>nom</h3>
-                  <!-- acá va la descripción del plato -->
-                  <p>des</p>
-                  <!-- acá van los íconos (porciones, calorías, etc.) -->
-                  <div>iconos</div>
-                </article>
-  
-               
-  
-                <!-- Comida 2 -->
-                <article>
-                  <img src="" alt="">
-                  <h3>x</h3>
-                  <p>x</p>
-                  <div>x</div>
-                </article>
-  
-                
-            
-                <!-- Comida 3 -->
-                <article>
-                  <img src="" alt="">
-                  <h3>x</h3>
-                  <p>x</p>
-                  <div>x</div>
-                </article>
-              </section>
-  
-  
-              <li><hr class="divider"></li>
-            
-            
-              <!-- Sección: PROMOS -->
-              <section id="promos">
-                <h2>Promos</h2>
-            
-                <!-- Promo destacada -->
-                <div>
-                  <!-- acá va la foto de la promo -->
-                  <img src="" alt="">
-                  <!-- acá va el texto de la promoción (ej: 2x1) -->
-                  <p>x</p>
+        </div>
+        <p>Entrega en x min</p>
+        <p>Precio del envío: $$</p>
+    </section>
+
+    <!-- BARRA DE CATEGORÍAS -->
+    <nav class="categorias">
+        <button>Comidas</button>
+        <button>Favoritos</button>
+        <button>Promos</button>
+        <button>Destacados</button>
+    </nav>
+
+    <!-- ================== COMIDAS ================== -->
+    <section class="seccion" id="comidas">
+        <h2 class="tituloSeccion">COMIDAS</h2>
+
+        <article class="plato">
+            <div class="fotoPlato">
+                <!-- Acá va la foto -->
+                <img src="imagenes/ensalada-big-joe.jpg" alt="Ensalada Big Joe">
+            </div>
+            <div class="infoPlato">
+                <h3>Ensalada Big Joe</h3>
+                <p>Pechuga de pollo a la parrilla servida sobre una cama de lechuga, tomate, pepino, zanahoria rallada y aderezo balsámico.</p>
+                <div class="iconosPlato">
+                    <div class="porcion"></div>
+                    <div class="vegano"></div>
+                    <div class="kosher">Kosher</div>
+                    <a href="#" class="verMas">Ver Más</a>
                 </div>
-              </section>
-            
-              <li><hr class="divider"></li>
-            
-              <!-- Sección: DESTACADOS -->
-              <section id="destacados">
-                <h2>Destacados CARRUSEL</h2>
-            
-                
-  
-              <li><hr class="divider"></li>
-            
-            
-              <!-- Sección: TUS FAVORITOS -->
-              <section id="favoritos">
-                <h2>Tus Favoritos</h2>
-            
-                <!-- Favorito 1 -->
-                <article>
-                  <img src="" alt="">
-                  <h3>x</h3>
-                  <p>x</p>
-                  <div>x</div>
-                </article>
-            
-                <!-- Favorito 2 -->
-                <article>
-                  <img src="" alt="">
-                  <h3>x</h3>
-                  <p>x</p>
-                  <div>x</div>
-                </article>
-              </section>
-  
-              <li><hr class="divider"></li>
-            
-            
-              <!-- Sección: BEBIDAS -->
-              <section id="bebidas">
-                <h2>Bebidas</h2>
-            
-                <!-- Bebida 1 -->
-                <article>
-                  <h3>x</h3>
-                  <p>x</p>
-                  <div>x</div>
-                </article>
-            
-                <!-- Bebida 2 -->
-                <article>
-                  <h3>x</h3>
-                  <p>x</p>
-                  <div>x</div>
-                </article>
-              </section>
-  
-              <li><hr class="divider"></li>
-            
-            
-              <!-- Sección: POSTRES -->
-              <section id="postres">
-                <h2>Postres</h2>
-            
-                <!-- Postre 1 -->
-                <article>
-                  <h3>x</h3>
-                  <p>x</p>
-                  <div>x</div>
-                </article>
-            
-                <!-- Postre 2 -->
-                <article>
-                  <h3>x</h3>
-                  <p>x</p>
-                  <div>x</div>
-                </article>
-              </section>
-    </main>
+            </div>
+        </article>
+
+        <article class="plato">
+            <div class="fotoPlato">
+                <img src="imagenes/tortilla-huerto.jpg" alt="Tortilla del Huerto">
+            </div>
+            <div class="infoPlato">
+                <h3>Tortilla del Huerto</h3>
+                <p>Mezcla esponjosa de huevos, zapallitos, cebolla, morrón y queso.</p>
+                <div class="iconosPlato">
+                    <div class="porcion"></div>
+                    <div class="vegetariano"></div>
+                    <div class="kosher">Kosher</div>
+                    <a href="#" class="verMas">Ver Más</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="plato">
+            <div class="fotoPlato">
+                <img src="imagenes/fresh-rolls.jpg" alt="Fresh Rolls">
+            </div>
+            <div class="infoPlato">
+                <h3>Fresh Rolls</h3>
+                <p>Llechuga rellena con hummus, palta y vegetales. Ver Más</p>
+                <div class="iconosPlato">
+                    <div class="porcion"></div>
+                    <div class="vegano"></div>
+                    <div class="kosher">Kosher</div>
+                    <a href="#" class="verMas">Ver Más</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- ================== PROMOS ================== -->
+    <section class="seccion" id="promos">
+        <h2 class="tituloSeccion">PROMOS</h2>
+        <div class="contenedorPromos">
+            <article class="promo">
+                <img src="imagenes/promo-2x1.jpg" alt="Promo 2x1">
+                <div class="etiquetaPromo">2x1</div>
+            </article>
+            <article class="promo">
+                <img src="imagenes/promo-yogurt.jpg" alt="Promo Yogurt">
+                <div class="etiquetaPromo">PROMOCIÓN</div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ================== DESTACADOS ================== -->
+    <section class="seccion" id="destacados">
+        <h2 class="tituloSeccion">DESTACADOS</h2>
+        <div class="carruselDestacados">
+            <img src="imagenes/pasta-verde-destacada.jpg" alt="Pasta verde destacada">
+            <div class="flecha izq"></div>
+            <div class="flecha der"></div>
+        </div>
+    </section>
+
+    <!-- ================== TUS FAVORITOS ================== -->
+    <section class="seccion" id="favoritos">
+        <h2 class="tituloSeccion">TUS FAVORITOS</h2>
+
+        <article class="plato fav">
+            <div class="fotoPlato">
+                <img src="imagenes/fresh-rolls.jpg" alt="Fresh Rolls">
+            </div>
+            <div class="infoPlato">
+                <h3>Fresh Rolls</h3>
+                <p>Llechuga rellena con hummus, palta y vegetales.</p>
+                <div class="iconosPlato">
+                    <div class="corazon"></div>
+                    <div class="kosher">Kosher</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="plato fav">
+            <div class="fotoPlato">
+                <img src="imagenes/salmon-bowl.jpg" alt="Salmon Bowl">
+            </div>
+            <div class="infoPlato">
+                <h3>Salmon Bowl</h3>
+                <p>Bowl de arroz blanco con salmón grillado, palta y vegetales.</p>
+                <div class="iconosPlato">
+                    <div class="corazon"></div>
+                    <div class="kosher">Kosher</div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Más favoritos si querés agregar -->
+    </section>
+
+    <!-- ================== BEBIDAS ================== -->
+    <section class="seccion" id="bebidas">
+        <h2 class="tituloSeccion">BEBIDAS</h2>
+
+        <article class="plato bebida">
+            <div class="fotoPlato">
+                <img src="imagenes/green-power-smoothie.jpg" alt="Green Power Smoothie">
+            </div>
+            <div class="infoPlato">
+                <h3>Green Power Smoothie</h3>
+                <p>Licuado verde con espinaca, manzana, banana y menta.</p>
+                <div class="iconosPlato">
+                    <div class="vegano"></div>
+                    <div class="kosher">Kosher</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="plato bebida">
+            <div class="fotoPlato">
+                <img src="imagenes/berry-fresh.jpg" alt="Berry Fresh">
+            </div>
+            <div class="infoPlato">
+                <h3>Berry Fresh</h3>
+                <p>Jugo de frutilla natural con menta y limón.</p>
+                <div class="iconosPlato">
+                    <div class="vegano"></div>
+                    <div class="kosher">Kosher</div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- ================== POSTRES ================== -->
+    <section class="seccion" id="postres">
+        <h2 class="tituloSeccion">POSTRES</h2>
+
+        <article class="plato postre">
+            <div class="fotoPlato">
+                <img src="imagenes/banana-bites.jpg" alt="Banana Bites">
+            </div>
+            <div class="infoPlato">
+                <h3>Banana Bites</h3>
+                <p>Bocaditos de masa rellenos y bañados en chocolate.</p>
+                <div class="iconosPlato">
+                    <div class="vegetariano"></div>
+                    <div class="kosher">Kosher</div>+
+
+                </div>
+            </div>
+        </article>
+
+        <article class="plato postre">
+            <div class="fotoPlato">
+                <img src="imagenes/carrot-cake.jpg" alt="Carrot Cake">
+            </div>
+            <div class="infoPlato">
+                <h3>Carrot Cake</h3>
+                <p>Torta húmeda de zanahoria con crema suave de queso y nueces.</p>
+                <div class="iconosPlato">
+                    <div class="vegetariano"></div>
+                    <div class="kosher">Kosher</div>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+
     <footer>
       <div class="footer-container">
         <div class="footer-logo">

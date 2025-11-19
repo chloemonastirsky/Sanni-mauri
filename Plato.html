@@ -48,88 +48,81 @@
   </header>
 
     <main>
-         
-                <!-- Tarjeta del restaurante -->
-                <section class="restaurant-card">
-                    <!-- Nombre del restaurante -->
-                    <h2>nombre resto</h2>
-                    
-                    <!-- Estrellas de valoración -->
-                    <div class="rating">
-                        <!-- ⭐⭐⭐⭐⭐ -->
-                        <span>⭐⭐⭐⭐⭐</span>
-                    </div>
-                    
-                    <!-- Información de envío y precio -->
-                    <p>Entrega en x min</p>
-                    <p>Precio del envío: x</p>
-                </section>
+    <section class="cartaResto">
+        <h2>Urban Green</h2>
+        <div class="elementos">
+            <estrellas>★★★★★</estrellas>
             
-                <!-- Barra de categorías -->
-                <nav class="categories">
-                    <!-- Botones de filtro -->
-                    <button>Comidas</button>
-                    <button>Favoritos</button>
-                    <button>Promos</button>
-                    <button>Destacados</button>
-                </nav>
-
-                 <!-- Tarjeta del producto -->
-    <section class="product-card">
-        <!-- Imagen del plato -->
-        <div class="product-image">foto</div>
-
-        <!-- Nombre del plato -->
-        <h3>nombre plato</h3>
-
-        <!-- Precio -->
-        <p>$xxxxx</p>
-
-        <!-- Iconos (ej: kosher, vegano, favorito) -->
-        <div class="icons">iconos</div>
-
-        <!-- Descripción del plato -->
-        <p>Descripción: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-
-        <!-- Información nutricional -->
-        <div class="nutrition-info">
-            <h4>Información nutricional:</h4>
-            <ul>
-                <li>Cals: x</li>
-                <li>Prote: x</li>
-                <li>Carbs: x</li>
-                <li>Fibra: x</li>
-                <li>Grasas: x</li>
-            </ul>
         </div>
-
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  ¡CUPON!
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">50% Off Combo Compelto</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="" alt=""> <!-- Foto QR -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-        
+        <p>Entrega en x min</p>
+        <p>Precio del envío: $$</p>
     </section>
 
-    
-    </main>
+    <nav class="categorias">
+        <button>Comidas</button>
+        <button>Favoritos</button>
+        <button>Promos</button>
+        <button>Destacados</button>
+    </nav>
+
+    <section class="cartaProducto">
+        <!-- IMAGEN -->
+        <div class="foto comida">
+            <img src="imagenes/chowfan.jpg" alt="Chicken Chow-Fan">        </div>
+
+        <div class="infoProducto">
+            <h3>Chicken Chow-Fan</h3>
+
+            <div class="precio iconos">
+                <div class="precio">$1000</div>
+                <div class="icons">
+                    <div class="icon gluten">Gluten-free</div>
+                    <div class="icon vegan">Vegan</div>
+                    <div class="icon kosher">Kosher</div>
+                    <div class="icon favorite">Favorite</div>
+                </div>
+            </div>
+
+            <p class="desc">
+                Descripción: Tiritas de pollo salteadas con morrones rojos y verdes en una salsa agridulce, servidas con arroz blanco.
+            </p>
+
+            <div class="infoNutricional">
+                <h4>Información nutricional:</h4>
+                <div class="nutriciongrid">
+                    <div class="signo"><div>Cals</div><div>600</div></div>
+                    <div class="signo"><div>Prote</div><div>40 gr</div></div>
+                    <div class="signo"><div>Carbs</div><div>40 gr</div></div>
+                    <div class="signo"><div>Fibra</div><div>10 gr</div></div>
+                    <div class="signo"><div>Grasas</div><div>10 gr</div></div>
+                </div>
+            </div>
+
+            <button type="button" class="coupon-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                ¡CUPON!
+            </button>
+        </div>
+    </section>
+
+    <!-- MODAL (lo dejé igual pero con clases más lindas si querés) -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">50% Off Combo Completo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="imagenes/qr-cupon.png" alt="QR Cupón" style="max-width: 100%; border-radius: 16px;">
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-secondary px-5" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
     <footer>
       <div class="footer-container">
         <div class="footer-logo">

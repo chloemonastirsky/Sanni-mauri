@@ -258,6 +258,207 @@ header nav div, header nav{
   
   /* fin Menu */
   
+  /* INICIO PLATO */
+  main {
+    padding: 20px 0;
+    background: #f5f5f5;
+}
+
+/* Colores propios de esta sección */
+.cartaResto,
+.cartaProducto {
+    --verde-claro: #e8f5e9;
+    --verde-medio: #81c784;
+    --verde-oscuro: #4caf50;
+}
+
+/* ====== TARJETA DEL RESTAURANTE ====== */
+.cartaResto {
+    /* background: #a7e338; */
+    padding: 20px 24px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    max-width: 420px;
+    margin: 0 auto 16px;
+    background: var(--verde-claro);
+    text-align: center;
+}
+
+.cartaResto h2 {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.elementos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+estrellas {
+    font-size: 24px;
+    display: inline-block;
+    margin-left: 35%;
+}
+
+
+.cartaResto > p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* ====== BARRA DE CATEGORÍAS ====== */
+.categorias {
+    display: flex;
+    gap: 12px;
+    margin: 0 auto 24px;
+    padding: 8px 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    max-width: 420px;
+}
+
+/* .categorias::-webkit-scrollbar { display: none; } */
+
+.categorias button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background: #e0e0e0;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.categorias button.active,
+.categorias button:hover {
+    background: #4caf50;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,1);
+}
+
+/* ====== TARJETA DEL PRODUCTO ====== */
+.cartaProducto {
+    background: #fff8e8;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.foto.comida {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.foto.comida img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoProducto {
+    padding: 24px;
+}
+
+.infoProducto h3 {
+    margin: 0 0 12px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #212121;
+}
+
+/* Precio + iconos en la misma línea */
+.precio.iconos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.precio.iconos .precio {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--verde-oscuro);
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.desc {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* ====== INFO NUTRICIONAL ====== */
+.infoNutricional h4 {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    color: #333;
+    /* text-align: center; */
+}
+
+.nutriciongrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.signo {
+    background: #F4E43C;
+    padding: 12px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.signo > div:first-child {
+    display: block;
+    color: #666;
+    font-weight: 500;
+}
+
+.signo > div:last-child {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #212121;
+    margin-top: 4px;
+}
+
+/* ====== BOTÓN CUPÓN ====== */
+.coupon-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--verde-oscuro);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 24px;
+    box-shadow: 0 4px 12px rgba(82, 175, 85, 0.4);
+    transition: all 0.3s;
+}
+
+.coupon-btn:hover {
+    background: #388e3c;
+    transform: translateY(-2px);
+}
+   /* FIN PLATO */
   
   
   
@@ -272,8 +473,96 @@ header nav div, header nav{
   
   
   
-  
-  
+  .seccion { padding: 20px 16px; background: white; margin-bottom: 12px; }
+.tituloSeccion { font-size: 22px; font-weight: bold; margin: 0 0 16px 8px; color: #333; text-transform: uppercase; }
+
+/* PLATOS NORMALES */
+.plato { 
+    display: flex; 
+    gap: 16px; 
+    margin-bottom: 20px; 
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+.plato:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.fotoPlato { flex-shrink: 0; width: 100px; height: 100px; border-radius: 16px; overflow: hidden; }
+.fotoPlato img { width: 100%; height: 100%; object-fit: cover; }
+
+.infoPlato h3 { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+.infoPlato p { margin: 0 0 8px; font-size: 14px; color: #555; line-height: 1.4; }
+
+.iconosPlato { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    font-size: 20px; 
+}
+.verMas { 
+    margin-left: auto; 
+    font-size: 14px; 
+    color: #4caf50; 
+    text-decoration: none; 
+    font-weight: 500;
+}
+
+/* PROMOS */
+.contenedorPromos { 
+    display: flex; 
+    gap: 16px; 
+    overflow-x: auto; 
+    padding: 8px 0;
+}
+.promo { 
+    position: relative; 
+    flex-shrink: 0; 
+    width: 280px; 
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+.promo img { width: 100%; height: 180px; object-fit: cover; }
+.etiquetaPromo { 
+    position: absolute; 
+    top: 12px; 
+    left: 12px; 
+    background: #ffeb3b; 
+    color: black; 
+    padding: 8px 16px; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    font-size: 18px;
+}
+
+/* DESTACADOS CARRUSEL */
+.carruselDestacados { 
+    position: relative; 
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+.carruselDestacados img { width: 100%; height: 200px; object-fit: cover; }
+.flecha { 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 40px; 
+    height: 40px; 
+    background: rgba(255,255,255,0.8); 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 24px; 
+}
+.flecha.izq { left: 12px; }
+.flecha.der { right: 12px; }
+
+/* FAVORITOS – corazón rojo */
+.fav .iconosPlato .corazon { color: #e91e63; }
+
+/* BEBIDAS Y POSTRES – misma estructura pero foto más pequeña */
+.bebida .fotoPlato, 
+.postre .fotoPlato { width: 90px; height: 120px; }
+
   
   
   
