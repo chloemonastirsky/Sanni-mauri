@@ -47,40 +47,40 @@
            
       </header>
   
-    <main>
-        <img src="" alt="">
-
-
-        <div class="formulario">
-            <form action='Url.Action("RegistroGuardar", "Account")' method="post">
-                <h6 class="textoInicioSesionRegistro">Nombre</h6>
-                <input type="text" name="nombre" placeholder="Nombre">
-                <h6 class="textoInicioSesionRegistro">Apellido</h6>        
-                <input type="text" name="apellido" placeholder="Apellido">
-                <h6 class="textoInicioSesionRegistro">Apellido</h6>        
-                <input type="email" name="email" placeholder="Correo Electronico">
-                <h6 class="textoInicioSesionRegistro">Contraseña</h6>        
-                <input type="password" name="contrasena" placeholder="Contraseña">
-                <h6 class="textoInicioSesionRegistro">Fecha de Nacimiento</h6>        
-                <input type="date" name="fechaNacimiento">
-                <h6 class="textoInicioSesionRegistro">País</h6>        
-                <select name="pais">
-                    <option>Argentina</option> 
-                    <option>Brasil</option> 
-                    <option>Chile</option> 
-                    <option>Paraguay</option> 
-                    <option>Uruguay</option> 
-                </select>
-        
-        
-                <input type="submit" value="Registrarse">
-            </form>
+      <main>
+        <div class="contenedor-principal-registro">
+            
+            <div class="logo-superior">
+                <img src="imagenes/LOGO TERMINADO SANNI LISTO.png" alt="Logo Sanni"> 
+            </div>
+    
+            <div class="tarjeta-formulario-datos">
+                <form action="#" method="post">
+                    
+                    <p class="etiqueta-campo">Nombre y Apellido</p>
+                    <input type="text" id="nombre-apellido" name="nombreApellido" placeholder="Felipe Cohen" value="Felipe Cohen">
+                    
+                    <p class="etiqueta-campo">Mail o Teléfono</p>
+                    <input type="text" id="mail-telefono" name="mailTelefono" placeholder="feli.cohen@gmail.com" value="feli.cohen@gmail.com">
+                    
+                    <p class="etiqueta-campo">Contraseña</p>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="********" value="password123">
+                    
+                    <p class="etiqueta-campo">Fecha de nacimiento</p>
+                    <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="16/07/2008" value="16/07/2008">
+                    
+                    <p class="etiqueta-campo">País/Región</p>
+                    <input type="text" id="pais" name="pais" placeholder="Argentina" value="Argentina">
+                    
+                    <button type="submit" class="boton-verde-oscuro-registro">Regístrate</button>
+                </form>
+    
+                <p class="texto-cuenta-existente">¿Ya tenés una cuenta?</p>
+                <a href="#" class="boton-verde-claro-login">Inicia sesión</a>
+            </div>
         </div>
-        
-        
-        
-        
     </main>
+    
     <footer>
         <div class="footer-container">
           <div class="footer-logo">

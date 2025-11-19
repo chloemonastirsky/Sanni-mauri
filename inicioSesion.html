@@ -47,24 +47,49 @@
            
       </header>
   
-    <main>
-        <img src="" alt="">
-
-            <div class="formulario">
-                <form action='Url.Action("Login", "Account")' method="post">
-                    <h6 class="textoInicioSesionRegistro">Mail</h6>
-                    <input type="email" name="email" placeholder="Correo Electronico">
-                    <h6 class="textoInicioSesionRegistro">Contraseña</h6>
-                    <input type="password" name="contrasena" placeholder="Contraseña">
-                    <a href='Url.Action("CambiarContrasena", "Account")'>¿Olvidaste tu contraseña?</a>
-                    <h6>@ViewBag.MensajeError </h6>
-                    <input type="submit" value="Iniciar Sesion">
-                </form>
+      <main class="login-page">
+        <!-- Logo grande arriba -->
+        <div class="logo-grande">
+            <img src="imagenes/LOGO TERMINADO SANNI LISTO.png" alt="SANNI">
+        </div>
+    
+        <!-- Tarjeta del formulario -->
+        <div class="tarjeta-login">
+            <form action='Url.Action("Login", "Account")' method="post">
+                <!-- Mail -->
+                <div class="campo">
+                    <label>Mail</label>
+                    <input type="email" name="email" placeholder="feli.cheneg@gmail.com" required>
+                </div>
+    
+                <!-- Contraseña -->
+                <div class="campo">
+                    <label>Contraseña</label>
+                    <input type="password" name="contrasena" placeholder="••••••••" required>
+                </div>
+    
+                <!-- Olvidaste contraseña -->
+                <a href='Url.Action("CambiarContrasena", "Account")' class="olvidaste">
+                    ¿Olvidaste tu contraseña?
+                </a>
+    
+                <!-- Botón Iniciar sesión -->
+                <input type="submit" value="Iniciar sesión" class="btn-verde">
+    
+                
+            </form>
+    
+            <!-- ¿No tienes cuenta? -->
+            <div class="no-cuenta">
+                <p>¿No tienes una cuenta?</p>
+                <a href='Url.Action("Registro","Account")'>
+                    <button class="btn-registrarse">Registrarse</button>
+                </a>
             </div>
-
-<h6>¿No tienes cuenta?</h6>
-<a href='Url.Action("Registro","Account")'><button>Registrarse</button></a>
+        </div>
     </main>
+
+
     <footer>
         <div class="footer-container">
           <div class="footer-logo">

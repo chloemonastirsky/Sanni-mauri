@@ -604,7 +604,218 @@ estrellas {
   
   
   
-  
+.login-page {
+  background-color: white;
+  padding: 40px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Logo grande arriba */
+.logo-grande {
+  margin-bottom: 30px;
+}
+.logo-grande img {
+  width: 220px;
+  height: auto;
+}
+
+/* Tarjeta blanca con sombra suave */
+.tarjeta-login {
+  background-color: #f8fff8;
+  max-width: 380px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Cada campo (Mail / Contraseña) */
+.campo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.campo label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.campo input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: 16px;
+  font-size: 16px;
+  background-color: white;
+  box-sizing: border-box;
+}
+.campo input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* ¿Olvidaste tu contraseña? */
+.olvidaste {
+  display: block;
+  margin: 16px 0 24px;
+  color: #4caf50;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Botón verde grande */
+.btn-verde {
+  width: 100%;
+  padding: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Mensaje de error */
+.error {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
+  height: 20px;
+}
+
+/* Sección "¿No tienes cuenta?" */
+.no-cuenta {
+  margin-top: 30px;
+}
+.no-cuenta p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.btn-registrarse {
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  color: #4caf50;
+  border: 3px solid #4caf50;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ------------------------------------- */
+/* ESTILOS BASE: DESKTOP FIRST (para pantallas >= 768px) */
+/* ------------------------------------- */
+
+:root {
+  --color-verde-claro: #A2D065; 
+  --color-verde-oscuro: #5C8C38;
+  --color-crema: #FCF4E9;
+  --color-texto-principal: #333;
+  --color-sombra: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos Generales (Desktop) */
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1; 
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; /* Alineación central en desktop */
+  padding: 50px 0; /* Buen espacio vertical en desktop */
+}
+
+.contenedor-principal-registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px; /* Ancho cómodo para desktop */
+}
+
+.logo-superior img {
+  max-width: 180px; /* Tamaño grande para desktop */
+  margin-bottom: 25px;
+}
+
+/* FORMULARIO DESKTOP */
+.tarjeta-formulario-datos {
+  background-color: var(--color-crema);
+  border-radius: 15px; 
+  padding: 30px; /* Padding amplio */
+  width: 100%;
+  box-shadow: 0 4px 8px var(--color-sombra);
+  text-align: center;
+}
+
+.tarjeta-formulario-datos .etiqueta-campo {
+  display: block; 
+  text-align: left;
+  margin-top: 15px; 
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1em; /* Fuente cómoda */
+  padding: 0; 
+}
+
+.tarjeta-formulario-datos input {
+  display: block; 
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px; 
+  box-sizing: border-box; 
+  font-size: 1em;
+  outline: none;
+}
+
+.boton-verde-oscuro-registro {
+  display: block; 
+  background-color: var(--color-verde-oscuro);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.texto-cuenta-existente {
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.boton-verde-claro-login {
+  display: inline-block; 
+  background-color: var(--color-verde-claro);
+  color: white;
+  text-decoration: none; 
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
   
   
   
@@ -810,6 +1021,77 @@ estrellas {
     /* background-color: rgba(0, 0, 0, 0.5); */
     color:black;
   }
+
+ 
+    .login-page {
+        padding: 30px 16px;
+    }
+    .logo-grande img {
+        width: 180px;
+    }
+    .tarjeta-login {
+        padding: 30px 20px;
+        border-radius: 24px;
+    }
+    .campo input {
+        padding: 14px;
+        font-size: 15px;
+    }
+    .btn-verde,
+    .btn-registrarse {
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    @media (max-width: 767px) {
+    
+      main {
+          align-items: flex-start; /* Vuelve a alinear arriba en móvil */
+          padding: 20px 0; /* Reduce el padding vertical */
+      }
+      
+      .contenedor-principal-registro {
+          max-width: 90%; /* Ocupa casi todo el ancho disponible */
+          padding: 0 10px; /* Pequeño padding horizontal para los bordes */
+      }
+  
+      .logo-superior img {
+          max-width: 150px; /* Reduce el logo */
+          margin-bottom: 15px;
+      }
+  
+      /* FORMULARIO MOBILE */
+      .tarjeta-formulario-datos {
+          padding: 20px; /* Reduce el padding interno */
+      }
+      
+      .tarjeta-formulario-datos .etiqueta-campo {
+          margin-top: 10px; /* Reduce el margen */
+          font-size: 0.9em; 
+      }
+  
+      .tarjeta-formulario-datos input {
+          padding: 8px 12px; /* Reduce el padding del campo */
+      }
+  
+      .boton-verde-oscuro-registro {
+          padding: 10px;
+          font-size: 1em;
+          margin-top: 20px;
+      }
+  
+      .texto-cuenta-existente {
+          font-size: 0.85em;
+          margin-top: 15px;
+      }
+  
+      .boton-verde-claro-login {
+          padding: 6px 15px;
+          font-size: 0.9em;
+          margin-bottom: 10px;
+      }
+  }
+
   
   }
   
