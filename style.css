@@ -834,6 +834,8 @@ estrellas {
   font-weight: bold;
   cursor: pointer;
   margin-top: 15px;
+  padding: 15px;
+        font-size: 19px;
 }
 
 /* Sección "¿Ya tenés cuenta?" */
@@ -922,7 +924,7 @@ estrellas {
     object-fit: contain;
 }
 .item-restriccion p {
-    font-size: 14px;
+    font-size: larger;
     color: #333;
     font-weight: 500;
     margin: 0;
@@ -1147,12 +1149,28 @@ estrellas {
     height: 28px;
 }
 
-.restriccion{
-  text-decoration: none;
+.fotito{
+  width: 40px;
 }
 
-  
-  /* --- MEDIA QUERY (MÓVIL) --- */
+.restriccion, .IniciarSesion{
+  text-decoration: none;
+  color:white; 
+}
+
+.platoResto, .infoPlato h3, .infoPlato p{
+  text-decoration: none;
+  color: black;
+}
+
+.textoRestri{
+  font-size: 4rem;
+}
+
+/* ---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------- */
+/* --- MEDIA QUERY (MÓVIL) --- */
   @media (max-width: 600px) {
 
   
@@ -1295,8 +1313,9 @@ estrellas {
    
   }
   
-  .platoResto{
+  .platoResto, .infoPlato h3, .infoPlato p{
     text-decoration: none;
+    color: black;
   }
   
   
@@ -1431,6 +1450,12 @@ estrellas {
                 width: 200px;
                 height: 200px;
             }
+
+            .qr-cupon img{
+                margin-left: 38%;
+                border: solid black 2px;
+            }
+
             .codigo-cupon {
                 font-size: 34px;
                 letter-spacing: 3px;

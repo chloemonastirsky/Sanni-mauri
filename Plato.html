@@ -19,25 +19,25 @@
              <img class="menu" src="imagenes/iconoMenu.png" alt="Menú">
             </button>
             <ul class="dropdown-menu" aria-labelledby="menuDropdown">
-              <li><a class="dropdown-item" href="#">Inicio</a></li>
+              <li><a class="dropdown-item" href="index.html">Inicio</a></li>
              
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href='Url.Action("favoritos","Home")'>Favoritos</a></li>
-              <li><a class="dropdown-item" href='Url.Action("restaurantes","Home")'>Restaurantes</a></li>
-              <li><a class="dropdown-item" href='Url.Action("restricciones","Home")'>Restricciones</a></li>
-              <li><a class="dropdown-item" href='Url.Action("notificaciones","Home")'>Notificaciones</a></li>
+              <li><a class="dropdown-item" href='Favoritos.html'>Favoritos</a></li>
+              <li><a class="dropdown-item" href='Restaurante.html'>Restaurantes</a></li>
+              <li><a class="dropdown-item" href='Restricciones.html'>Restricciones</a></li>
+              <li><a class="dropdown-item" href='Notificaciones.html'>Notificaciones</a></li>
               <li><a class="dropdown-item" href='Url.Action("promociones","Home")'>Promociones</a></li>
-              <li><a class="dropdown-item" href='Url.Action("chatbot","Home")'>Chat</a></li>
+              <li><a class="dropdown-item" href='Chatbot.html'>Chat</a></li>
             </ul>
           </div>
-          <img class="logo" src="imagenes/LOGO TERMINADO SANNI LISTO.png" alt="Logo">
+          <a href="index.html"><img class="logo" src="imagenes/LOGO TERMINADO SANNI LISTO.png" alt="Logo"></a>
         </div>
    
         <!-- DERECHA -->
         <div class="right-section">
           <img class="lupa" href="#" src="imagenes/iconoLupa.png" alt="Buscar">
          
-          <img class="usuario" href="#" src="imagenes/iconoUsuario.webp" alt="Usuario">
+          <a href="Perfil.html"><img class="usuario" src="imagenes/iconoUsuario.webp" alt=""></a>
         </div>
    
       </div>
@@ -58,8 +58,8 @@
             <div class="elementos">
                 <estrellas>★★★★★</estrellas>
             </div>
-            <p>Entrega en x min</p>
-            <p>Precio del envío: $$</p>
+            <p>Entrega en 11 min</p>
+            <p>Precio del envío: $2200</p>
         </section>
 
         <section class="cartaProducto">
@@ -71,7 +71,7 @@
                 <h3>Chicken Chow-Fan</h3>
 
                 <div class="precio iconos">
-                    <div class="precio">$1000</div>
+                    <div class="precio">$7800</div>
                     <div class="icons">
                         <div class="icon gluten"><img src="imagenes/celiaco.png" alt="Sin gluten"></div>
                         <div class="icon lactosa"><img src="imagenes/sin lactosa.png" alt="Sin lactosa"></div>
@@ -96,7 +96,7 @@
                 </div>
 
                 <!-- BOTÓN QUE ABRE EL CUPÓN -->
-          <button class="btn-canjear" onclick="abrirCupon()">
+          <button class="btn-verde" onclick="abrirCupon()">
               ¡Cupón!
           </button>
       </section>
@@ -126,7 +126,7 @@
           Código de descuento válido hasta: <strong>19/11/25</strong>
       </div>
 
-      <button class="btn-volver-cupon" onclick="cerrarCupon()">
+      <button class="btn-verde" onclick="cerrarCupon()">
           ← Volver
       </button>
   </div>
