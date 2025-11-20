@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
@@ -31,7 +31,6 @@
                 </ul>
               </div>
               <a href="index.html"><img class="logo" src="imagenes/LOGO TERMINADO SANNI LISTO.png" alt="Logo"></a>
-              
             </div>
        
             <!-- DERECHA -->
@@ -47,58 +46,80 @@
        
            
       </header>
-  
-<main class="chat-main">
+      <main class="busqueda-main">
 
-  <div class="chat-header">
-    <div class="chat-flecha" onclick="history.back()"><img class="fotito" src="imagenes/flecha verde izquierda.png" alt=""></div>
-    <h1 class="chat-titulo">
-        <img src="imagenes/limo.png" alt="Limonchetti" class="fotito">
-        Limonchetti
-    </h1>
-</div>
+        <!-- BARRA DE BÚSQUEDA -->
+        <div class="busqueda-barra">
+            <input type="text" placeholder="Busca un plato" class="input-busqueda-principal" readonly>
+            <img src="imagenes/iconoLupa.png" alt="Buscar" class="lupa-principal">
+        </div>
+    
 
 
-    <!-- CONTENEDOR DE LOS MENSAJES -->
-    <div class="chat-contenedor">
+        <!-- PCARRUSEL PLATOS -->
+    <section class="seccion">
+      <h2 class="titulo-seccion">PLATOS</h2>
+      <div class="contenedor-promos">
+        <div class="promo">
+          <a href="Plato.html" class="restriccion"><img src="imagenes/sushi.jpg" alt="plato"></a>
+
+        </div>
+        <div class="promo">
+          <a href="Plato.html" class="restriccion"><img src="imagenes/salmoncito.jpg" alt="plato"></a>
+          
+        </div>
+        <div class="promo">
+          <a href="Plato.html" class="restriccion"><img src="imagenes/warp.jpg" alt="plato"></a>
+            
+          </div>
+      </div>
+    </section>
 
 
-        <!-- MENSAJE DEL BOT -->
-        <div class="mensaje-bot">
-            <div class="burbuja-bot">
-                ¡Hola!<br>
-                ¿En qué podemos ayudarte hoy?<br>
-                Déjanos saber qué necesitas y estaremos encantados de asistirte.
+
+
+        <div class="busqueda-barra">
+            <input type="text" placeholder="Busca un restaurante" class="input-busqueda-principal" readonly>
+            <img src="imagenes/iconoLupa.png" alt="Buscar" class="lupa-principal">
+        </div>
+    
+        <!-- SECCIÓN RESTAURANTES -->
+        
+    <section class="seccion">
+      <h2 class="titulo-seccion">RESTAURANTES</h2>
+      <div class="contenedor-promos">
+        <div class="promo">
+          <a href="Restaurante.html" class="restriccion"><img src="imagenes/resto 1.jpg" alt="2x1"></a>
+          
+        </div>
+        <div class="promo">
+          <a href="Restaurante.html" class="restriccion"><img src="imagenes/resto 2.webp" alt="Promoción"></a>
+          
+        </div>
+        <div class="promo">
+          <a href="Restaurante.html" class="restriccion"><img src="imagenes/ressto 3.jfif" alt="Promoción"></a>
+            
+          </div>
+      </div>
+    </section>
+    
+        <!-- SECCIÓN CATEGORÍAS -->
+        <section class="seccion-categorias">
+            <h2 class="titulo-seccion">CATEGORÍAS</h2>
+            <div class="grid-categorias">
+                <div class="cat-item">SUSHI</div>
+                <div class="cat-item">BAR</div>
+                <div class="cat-item">INDIA</div>
+                <div class="cat-item">HAMBURGUESA</div>
+                <div class="cat-item">MEXICANA</div>
+                <div class="cat-item">EMPANADA</div>
+                <div class="cat-item">PIZZA</div>
+                <div class="cat-item-vermas"><p>VER MÁS...</p></div>
             </div>
-        </div>
-
-
-        <!-- MENSAJE DEL USUARIO -->
-        <div class="mensaje-user">
-            <div class="burbuja-user">
-                Buenos días, he tenido problemas con la cancelación de un pedido que hice ayer. La compra no se efectuó pero la notificación saltó.
-            </div>
-        </div>
-
-
-        <!-- Espacio para que el chat se vea "largo" -->
-        <div style="height: 300px;"></div>
-    </div>
-
-
-    <!-- BARRA DE ESCRIBIR FIJA ABAJO -->
-    <div class="chat-barra-inferior">
-        <div class="chat-input-grande">
-            <textarea class="texto-escribir" placeholder="Escribinos tu duda" rows="1"></textarea>
-            <button class="boton-enviar">
-                <img class="fotito"src="imagenes/flecha.png" alt="Enviar">
-            </button>
-        </div>
-    </div>
-
-
-</main>
-
+        </section>
+    
+    </main>
+    
     <footer>
         <div class="footer-container">
           <div class="footer-logo">

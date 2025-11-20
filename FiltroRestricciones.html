@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+   
+        <!-- IZQUIERDA -->
+        <div class="left-section">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+             <img class="menu" src="imagenes/iconoMenu.png" alt="Menú">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+              <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+             
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href='Favoritos.html'>Favoritos</a></li>
+              <li><a class="dropdown-item" href='Restaurante.html'>Restaurantes</a></li>
+              <li><a class="dropdown-item" href='Restricciones.html'>Restricciones</a></li>
+              <li><a class="dropdown-item" href='Notificaciones.html'>Notificaciones</a></li>
+              <li><a class="dropdown-item" href="promociones.html">Promociones</a></li>
+              <li><a class="dropdown-item" href='Chatbot.html'>Chat</a></li>
+            </ul>
+          </div>
+          <a href="index.html"><img class="logo" src="imagenes/LOGO TERMINADO SANNI LISTO.png" alt="Logo"></a>
+        </div>
+   
+        <!-- DERECHA -->
+        <div class="right-section">
+          <img class="lupa" href="#" src="imagenes/iconoLupa.png" alt="Buscar">
+         
+          <a href="Perfil.html"><img class="usuario" src="imagenes/iconoUsuario.webp" alt=""></a>
+        </div>
+   
+      </div>
+    </nav>
+   
+   
+       
+  </header>
+
+  <main class="restriccion-filtro-main">
+
+    <!-- CABECERA CON LA RESTRICCIÓN ACTIVA -->
+    <div class="header-restriccion-activa">
+        <a href="Restricciones.html"><img src="imagenes/menos verde.png" alt="Agregar" class="icono-less"></a>
+        
+      <div class="circulo-restriccion">
+        <img src="imagenes/sin azucar.png" alt="Sugar Free">
+      </div>
+      <h1>Sugar Free</h1>
+      <a href="Restricciones.html"><img src="imagenes/mas verde.png" alt="Agregar" class="icono-plus"></a>
+      
+    </div>
+  
+    <!-- PROMOS -->
+    <section class="seccion">
+      <h2 class="titulo-seccion">PROMOS</h2>
+      <div class="contenedor-promos">
+        <div class="promo">
+          <!-- <a href=""></a> -->
+          <a href="Plato.html" class="restriccion"><img src="imagenes/Avocado Toast Primavera.webp" alt="2x1"></a>
+          <div class="etiqueta-promo">2x1</div>
+        </div>
+        <div class="promo">
+            <a href="Plato.html" class="restriccion"><img src="imagenes/carrot.jpg" alt="Promoción"></a>
+          
+          <div class="etiqueta-promo">PROMOCIÓN</div>
+        </div>
+        <div class="promo">
+            <a href="Plato.html" class="restriccion"><img src="imagenes/Avocado Toast Primavera.webp" alt="Promoción"></a>
+            
+            <div class="etiqueta-promo">OFERTA</div>
+          </div>
+      </div>
+    </section>
+
+    <!-- RESTOSSS -->
+
+    <section class="seccion">
+        <h2 class="titulo-seccion">RESTAURANTES</h2>
+        <div class="contenedor-promos">
+          <div class="promo">
+            <a href="Restaurante.html" class="restriccion"><img src="imagenes/resto 1.jpg" alt="2x1"></a>
+            
+          </div>
+          <div class="promo">
+            <a href="Restaurante.html" class="restriccion"><img src="imagenes/resto 2.webp" alt="Promoción"></a>
+            
+          </div>
+          <div class="promo">
+            <a href="Restaurante.html" class="restriccion"><img src="imagenes/ressto 3.jfif" alt="Promoción"></a>
+              
+            </div>
+        </div>
+      </section>
+
+      
+  
+    <!-- FAVORITOS -->
+    <section class="seccion">
+      <h2 class="titulo-seccion">FAVORITOS</h2>
+      <div class="plato fav">
+        <a href="Plato.html" class="restriccion"><div class="foto-plato"><img src="imagenes/penne.avif" alt="Penne Rigate Crema con Pollo"></div></a>
+            
+        
+        <div class="info-plato">
+          <h3>Green Eats</h3>
+          <p>Penne Rigate Crema con Pollo y Queso</p>
+          <div class="iconos-plato">
+            <img src="imagenes/sin azucar.png" alt="Sugar Free">
+            <img src="imagenes/sin lactosa.png" alt="Gluten Free">
+          </div>
+          <div class="precio-fav">$8.900</div>
+        </div>
+        <img src="imagenes/cora rojo.png" alt="Favorito" class="corazon-rojo">
+      </div>
+  
+      <div class="plato fav">
+        <a href="Plato.html" class="restriccion"><div class="foto-plato"><img src="imagenes/arroz.jfif" alt="Arroz con Pollo"></div></a>
+            
+        <div class="info-plato">
+          <h3>Green Eats</h3>
+          <p>Arroz con Pollo y Palta</p>
+          <div class="iconos-plato">
+            <img src="imagenes/bajoSodio.jpg" alt="Sugar Free">
+          </div>
+          <div class="precio-fav">$9.300</div>
+        </div>
+        <img src="imagenes/cora rojo.png" alt="Favorito" class="corazon-rojo">
+      </div>
+  
+      <a href="#" class="ver-mas">Ver más...</a>
+    </section>
+  
+    <!-- PLATOS -->
+    <section class="seccion">
+      <h2 class="titulo-seccion">PLATOS</h2>
+
+      <div class="plato">
+        <a href="Plato.html" class="restriccion"><div class="foto-plato"><img src="imagenes/Avocado Toast Primavera.webp" alt="Avocado Toast Primavera"></div></a>
+        <div class="info-plato">
+          <h3>Green Eats</h3>
+          <p>Chowfan</p>
+          <div class="iconos-plato">
+            <img src="imagenes/celiaco.png" alt="Celiaco">
+          </div>
+          <div class="precio-fav">$9.300</div>
+        </div>
+        <img src="imagenes/cora blanco.png" alt="Agregar a favoritos" class="corazon">
+      </div>
+  
+      <div class="plato">
+        <a href="Plato.html" class="restriccion"><div class="foto-plato"><img src="imagenes/chowfan.jpg" alt="chowfan"></div></a>
+        <div class="info-plato">
+          <h3>Green Eats</h3>
+          <p>Chowfan</p>
+          <div class="iconos-plato">
+            <img src="imagenes/celiaco.png" alt="Celiaco">
+          </div>
+          <div class="precio-fav">$9.300</div>
+        </div>
+        <img src="imagenes/cora blanco.png" alt="Agregar a favoritos" class="corazon">
+      </div>
+  
+      <a href="#" class="ver-mas">Ver más...</a>
+    </section>
+  
+    <!-- RESTAURANTES -->
+    <section class="seccion">
+      <h2 class="titulo-seccion">LOS MEJORES RESTAURANTES</h2>
+      <div class="resto-item">
+        <div class="boton-resto verde">Green Mood<br><span>Hasta 35% OFF</span></div>
+      </div>
+      <div class="resto-item">
+        <div class="boton-resto verde">Pure & Fresh<br><span>Hasta 20% OFF</span></div>
+      </div>
+      <div class="resto-item">
+        <div class="boton-resto verde">Bowl & Co.<br><span>Hasta 15% OFF</span></div>
+      </div>
+  
+      <a href="#" class="ver-mas">Ver más...</a>
+    </section>
+  
+  </main>
+
+<!-- OVERLAY OSCURO -->
+  <div id="overlayCupon"></div>
+
+  <!-- MODAL CUPÓN (el que querías) -->
+  <div id="modalCupon">
+      <div class="qr-cupon">
+          <img src="imagenes/qr.png" alt="QR Cupón"> <!-- PONÉ TU QR REAL ACÁ -->
+      </div>
+
+      <div class="codigo-cupon">QHJJ976</div>
+
+      <div class="texto-cupon">
+          Vale por: <strong>2x1 en combo completo</strong>
+      </div>
+
+      <div class="texto-cupon">
+          Código de descuento válido hasta: <strong>19/11/25</strong>
+      </div>
+
+      <button class="btn-verde" onclick="cerrarCupon()">
+          ← Volver
+      </button>
+  </div>
+  
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img class="logo-footer" src="imagenes/logo simplificado editado.png" alt="Logo">
+        </div>
+   
+
+
+
+
+        <div class="redes-numero">
+        <div class="footer-redes">
+          <img class="ig" src="imagenes/ig.png" alt="Instagram">
+          <img class="x" src="imagenes/x.png" alt="X">
+          <img class="tt" src="imagenes/tt.png" alt="TikTok">
+        </div>
+   
+        <div class="footer-numero">
+          <img class="telefono" src="imagenes/telefono.png" alt="Teléfono">
+          <h6>+54 9 11 6289-1434</h6>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
