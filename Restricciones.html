@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 <body>
-    <section class="sectionPlato">
   <header>
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
@@ -48,10 +47,78 @@
        
   </header>
 
-    <main>
-    
+<main class="restricciones-page">
+
+    <!-- BARRA DE BÚSQUEDA -->
+    <form class="buscador-restricciones">
+        <input type="text" placeholder="Buscar restricción..." class="input-busqueda">
+        <img src="imagenes/iconoLupa.png" alt="Buscar" class="lupa-busqueda">
+    </form>
+
+    <!-- TÍTULO -->
+    <h2 class="titulo-restricciones">
+        ¿Tenés alguna de estas restricciones en tu dieta?
+    </h2>
+
+    <!-- GRID DE RESTRICCIONES -->
+    <div class="grid-restricciones">
+        <div class="item-restriccion">
+            <a href="Plato.html" class="restriccion"><img src="imagenes/sin azucar.png" alt="Sugar Free"></a>
+            <p>Sugar Free</p>
+        </div>
+        <div class="item-restriccion">
+            <img src="imagenes/celiaco.png" alt="Gluten Free">
+            <p>Gluten Free</p>
+        </div>
+        <div class="item-restriccion">
+            <img src="imagenes/sin azucar.png" alt="Vegetarian">
+            <p>Vegetarian</p>
+        </div>
+        <div class="item-restriccion">
+            <img src="imagenes/kosher.png" alt="Kosher">
+            <p>Kosher</p>
+        </div>
+        <div class="item-restriccion">
+            <img src="imagenes/sin lactosa.png" alt="No Lactose">
+            <p>No Lactose</p>
+        </div>
+        <div class="item-restriccion">
+            <img src="imagenes/celiaco.png" alt="Vegan">
+            <p>Vegan</p>
+        </div>
+        <div class="item-restriccion">
+            <img src="imagenes/bajoSodio.png" alt="Low Sodium">
+            <p>Low Sodium</p>
+        </div>
+    </div>
+
 </main>
 
+
+<!-- OVERLAY OSCURO -->
+  <div id="overlayCupon"></div>
+
+  <!-- MODAL CUPÓN (el que querías) -->
+  <div id="modalCupon">
+      <div class="qr-cupon">
+          <img src="imagenes/qr.png" alt="QR Cupón"> <!-- PONÉ TU QR REAL ACÁ -->
+      </div>
+
+      <div class="codigo-cupon">QHJJ976</div>
+
+      <div class="texto-cupon">
+          Vale por: <strong>2x1 en combo completo</strong>
+      </div>
+
+      <div class="texto-cupon">
+          Código de descuento válido hasta: <strong>19/11/25</strong>
+      </div>
+
+      <button class="btn-volver-cupon" onclick="cerrarCupon()">
+          ← Volver
+      </button>
+  </div>
+  
     <footer>
       <div class="footer-container">
         <div class="footer-logo">
@@ -77,8 +144,7 @@
     </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
     <script src="script.js"></script>
-    </section>
 </body>
+
 </html>

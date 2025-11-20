@@ -47,37 +47,49 @@
            
       </header>
   
-    <main>
-         <div class="chat-header">
-        <div class="chat-flecha" onclick="history.back()">Back</div>
-        <h1 class="chat-titulo">
-            <img src="imagenes/limonchetti-logo.jpg" alt="Limonchetti" class="chat-logo-peque">
-            Limonchetti
-        </h1>
-    </div>
+<main class="chat-main">
 
-    <!-- MAIN CON MENSAJES + TEXTAREA -->
-    <main class="chat-contenido">
 
-        <!-- Mensaje del bot -->
-        <div class="msg-bot">
-            ¡Hola!  
-            ¿En qué podemos ayudarte hoy? Déjanos saber qué necesitas y estaremos encantados de asistirte.
-        </div>
+    <!-- CONTENEDOR DE LOS MENSAJES -->
+    <div class="chat-contenedor">
 
-        <!-- Mensaje del usuario -->
-        <div class="msg-user">
-            Buenos días, he tenido problemas con la cancelación de un pedido que hice ayer. La compra no se efectuó pero la notificación saltó.
-        </div>
 
-        <!-- Área de escritura al final del main -->
-        <div class="chat-escribir">
-            <div class="chat-input-wrapper">
-                <textarea class="chat-textarea" placeholder="Escribinos tu duda" rows="1"></textarea>
-                <div class="chat-btn-enviar">Send</div>
+        <!-- MENSAJE DEL BOT -->
+        <div class="mensaje-bot">
+            <div class="burbuja-bot">
+                ¡Hola!<br>
+                ¿En qué podemos ayudarte hoy?<br>
+                Déjanos saber qué necesitas y estaremos encantados de asistirte.
             </div>
         </div>
-    </main>
+
+
+        <!-- MENSAJE DEL USUARIO -->
+        <div class="mensaje-user">
+            <div class="burbuja-user">
+                Buenos días, he tenido problemas con la cancelación de un pedido que hice ayer. La compra no se efectuó pero la notificación saltó.
+            </div>
+        </div>
+
+
+        <!-- Espacio para que el chat se vea "largo" -->
+        <div style="height: 300px;"></div>
+    </div>
+
+
+    <!-- BARRA DE ESCRIBIR FIJA ABAJO -->
+    <div class="chat-barra-inferior">
+        <div class="chat-input-grande">
+            <textarea class="texto-escribir" placeholder="Escribinos tu duda" rows="1"></textarea>
+            <button class="boton-enviar">
+                <img src="imagenes/flecha.png" alt="Enviar">
+            </button>
+        </div>
+    </div>
+
+
+</main>
+
     <footer>
         <div class="footer-container">
           <div class="footer-logo">

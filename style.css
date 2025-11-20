@@ -858,7 +858,298 @@ estrellas {
   cursor: pointer;
 }
       
-* 
+/* ============================================================= */
+/* ====================== RESTRICCIONES ======================= */
+/* ============================================================= */
+.restricciones-page {
+    background-color: white;
+    padding: 30px 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+.buscador-restricciones {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto 40px;
+}
+.input-busqueda {
+    width: 100%;
+    padding: 16px 50px 16px 20px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+.lupa-busqueda {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+.titulo-restricciones {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-restricciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+.item-restriccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+.item-restriccion img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #e8f5e9;
+    padding: 15px;
+    border: 4px solid #4caf50;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+.item-restriccion p {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* ====================== CHAT - VERSIÓN WEB ====================== */
+.chat-header-total {
+    background-color: #4A963F;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+}
+.chat-flecha-volver img {
+    width: 30px;
+    height: 30px;
+}
+.chat-titulo-principal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo-chef {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.chat-iconos-derecha img {
+    width: 40px;
+    height: 40px;
+}
+.chat-contenedor {
+    background-color: #f8f8f8;
+    padding: 20px;
+    min-height: calc(100vh - 210px);
+}
+.mensaje-bot {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.burbuja-bot {
+    background-color: #4A963F;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 20px 20px 20px 0;
+    display: inline-block;
+    max-width: 80%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.mensaje-user {
+    margin-bottom: 20px;
+    text-align: right;
+}
+.burbuja-user {
+    background-color: #2E7D32;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 20px 20px 0 20px;
+    display: inline-block;
+    max-width: 80%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.chat-barra-inferior {
+    background-color: white;
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+}
+.chat-input-grande {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    padding: 10px 15px;
+    gap: 10px;
+}
+.texto-escribir {
+    background: transparent;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+    resize: none;
+}
+.boton-enviar img {
+    width: 28px;
+    height: 28px;
+}
+.chat-footer-verde {
+    background-color: #4A963F;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.logo-mn {
+    width: 80px;
+    margin-bottom: 10px;
+}
+.footer-redes-chat {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+.footer-redes-chat img {
+    width: 40px;
+    height: 40px;
+}
+.footer-telefono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-telefono img {
+    width: 30px;
+    height: 30px;
+}
+
+/* ====================== PERFIL - VERSIÓN WEB ====================== */
+.perfil-tarjeta {
+    background-color: #f9f6ee;
+    margin: 30px auto;
+    max-width: 380px;
+    border-radius: 30px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perfil-foto-circulo {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 16px;
+    border: 5px solid white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.perfil-foto-circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.perfil-nombre-pais h2 {
+    margin: 0 0 6px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.perfil-nombre-pais p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+.perfil-opciones {
+    max-width: 380px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 20px;
+}
+.btn-perfil {
+    background-color: #4A963F;
+    color: white;
+    padding: 18px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+}
+.btn-cerrar {
+    background-color: #6AB55A !important;
+}
+/* FOOTER VERDE */
+.footer-perfil {
+    background-color: #4A963F;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+.logo-mn {
+    width: 90px;
+    margin-bottom: 20px;
+}
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+.footer-redes img {
+    width: 40px;
+    height: 40px;
+}
+.footer-telefono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-telefono img {
+    width: 28px;
+    height: 28px;
+}
+
+.restriccion{
+  text-decoration: none;
+}
 
   
   /* --- MEDIA QUERY (MÓVIL) --- */
@@ -1174,6 +1465,143 @@ estrellas {
   .no-cuenta p {
       margin: 30px 0 14px;
   
+}
+
+/* MÓVIL */
+@media (max-width: 600px) {
+    .restricciones-page { padding: 20px 15px; }
+    .input-busqueda { padding: 14px 45px 14px 18px; }
+    .lupa-busqueda { right: 15px; width: 22px; }
+    .titulo-restricciones { font-size: 20px; margin-bottom: 40px; }
+    .grid-restricciones { gap: 25px; }
+    .item-restriccion img { width: 80px; height: 80px; padding: 12px; }
+    .item-restriccion p { font-size: 13px; }
+}
+
+
+
+/* ====================== CHAT - VERSIÓN MÓVIL ====================== */
+@media (max-width: 600px) {
+    .chat-header-total {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+
+    .chat-titulo-principal h1 {
+        font-size: 20px;
+    }
+
+
+    .logo-chef {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .chat-iconos-derecha img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .burbuja-bot, .burbuja-user {
+        max-width: 90%;
+        font-size: 15px;
+        padding: 14px 18px;
+    }
+
+
+    .chat-barra-inferior {
+        padding: 12px 15px;
+    }
+
+
+    .texto-escribir {
+        font-size: 15px;
+    }
+
+
+    .boton-enviar img {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .logo-mn {
+        width: 60px;
+    }
+
+
+    .footer-redes-chat img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .footer-telefono {
+        font-size: 16px;
+    }
+
+
+    .footer-telefono img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* ====================== PERFIL - MÓVIL ====================== */
+@media (max-width: 600px) {
+    .perfil-tarjeta {
+        margin: 20px 15px;
+        padding: 25px 15px;
+    }
+
+    .perfil-foto-circulo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .perfil-nombre-pais h2 {
+        font-size: 22px;
+    }
+
+    .perfil-nombre-pais p {
+        font-size: 15px;
+    }
+
+    .perfil-opciones {
+        margin: 15px 15px;
+        gap: 14px;
+    }
+
+    .btn-perfil {
+        padding: 16px;
+        font-size: 17px;
+    }
+
+    .footer-perfil {
+        padding: 25px 15px;
+    }
+
+    .logo-mn {
+        width: 70px;
+    }
+
+    .footer-redes img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-telefono {
+        font-size: 16px;
+    }
+
+    .footer-telefono img {
+        width: 24px;
+    }
+}
+
 }
         
           
