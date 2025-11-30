@@ -471,7 +471,6 @@ estrellas {
   
   
   
-  
   .seccion, .seccionLanding { padding: 20px 16px; background: white; margin-bottom: 12px; }
 .tituloSeccion { font-size: 22px; font-weight: bold; margin: 0 0 16px 8px; color: #333; text-transform: uppercase; }
 .seccionLanding{
@@ -1314,14 +1313,55 @@ estrellas {
   margin-bottom: 50px;
 }
 
+.btn-secundario {
+  /* Propiedades de visualización */
+  display: inline-block; /* Menos agresivo que 'block' */
+  
+  /* Colores y fondo */
+  background: #6DBE64; /* Verde más sutil que el original */
+  color: #ffffff;
+  
+  /* Tipografía */
+  font-size: 18px; /* Tamaño ligeramente más pequeño */
+  font-weight: 500; /* Menos 'bold' */
+  
+  /* Espaciado y forma */
+  padding: 12px 30px; /* Menos relleno */
+  border-radius: 2px; /* Forma rectangular sutil */
+  text-decoration: none;
+  
+  /* Sombra sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pequeña y menos opaca */
+  
+  /* Transiciones */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.btn-secundario:hover {
+  background: #5AA351; /* Oscurecer un poco al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px); /* Efecto de "levantamiento" sutil */
+}
 .btn-principal:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgba(74, 150, 63, 0.5);
 }
 
+
+.imagen-landing{
+  width: 100%;
+  max-width: 400px;
+  margin-top: 0px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
 /* Título "Ofertones" */
 .ofertones {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 900;
   color: #2e7d32;
   margin: 40px 0 30px 0;
@@ -1354,6 +1394,7 @@ estrellas {
   color: white;
   transform: translateY(-2px);
 }
+
 
 /* ============================================================= */
 /* ============== FILTRO POR RESTRICCIÓN (Sugar Free) =========== */
@@ -2066,7 +2107,7 @@ estrellas {
   
   .footer-numero h6 {
     font-size: 15px;
-    color: white;
+    color: #fffaea;
     margin: 0;
     font-weight: 500;
   }
@@ -2362,6 +2403,8 @@ estrellas {
         width: 24px;
     }
 
+    
+
   
   /* ============================================================= */
 /* ====================== index ======================= */
@@ -2376,6 +2419,8 @@ estrellas {
   
   .descripcion-landing {
       font-size: 20px;
+      color: #204114;
+      font-weight: bold;
   }
   
   .logo-landing {
@@ -2398,6 +2443,7 @@ estrellas {
       max-width: 280px;
   }
 }
+
 
 }
         

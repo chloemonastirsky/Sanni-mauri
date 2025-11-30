@@ -22,12 +22,14 @@
                   <li><a class="dropdown-item" href="index.html">Inicio</a></li>
                  
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href='Favoritos.html'>Favoritos</a></li>
+                  <li><a class="dropdown-item" href='Restricciones.html'>Estilos de alimentación</a></li>
                   <li><a class="dropdown-item" href='Restaurantes.html'>Restaurantes</a></li>
-                  <li><a class="dropdown-item" href='Restricciones.html'>Restricciones</a></li>
+                  <li><a class="dropdown-item" href='Favoritos.html'>Favoritos</a></li>
                   <li><a class="dropdown-item" href='Notificaciones.html'>Notificaciones</a></li>
                   <li><a class="dropdown-item" href="promociones.html">Promociones</a></li>
                   <li><a class="dropdown-item" href='Chatbot.html'>Chat</a></li>
+                  <li><a class="dropdown-item" href='QuienesSomos.html'>Quienes somos</a></li>
+
                 </ul>
               </div>
               <a href="index.html"><img class="logo" src="imagenes/LOGO TERMINADO SANNI LISTO.png" alt="Logo"></a>
@@ -55,16 +57,16 @@
     
         <!-- MISMA TARJETA que en login -->
         <div class="tarjeta-login">
-            <form action='Url.Action("Registro", "Account")' method="post">
+            <form action="index.html" method="post">
     
                 <div class="campo">
                     <label>Nombre y Apellido</label>
-                    <input type="text" name="nombreApellido" placeholder="Felipe Cohen" required>
+                    <input type="text" name="nombreApellido" placeholder="Ingrese nombre y apellido" required>
                 </div>
     
                 <div class="campo">
                     <label>Mail o Teléfono</label>
-                    <input type="text" name="mailTelefono" placeholder="feli.cohen@gmail.com" required>
+                    <input type="text" name="mailTelefono" placeholder="Ingrese su mail" required>
                 </div>
     
                 <div class="campo">
@@ -74,14 +76,14 @@
     
                 <div class="campo">
                     <label>Fecha de nacimiento</label>
-                    <input type="text" name="fechaNacimiento" placeholder="16/07/2008" required>
+                    <input type="text" name="fechaNacimiento" placeholder="Ingrese su fecha de nacimiento" required>
                 </div>
-    
+
                 <div class="campo">
-                    <label>País/Región</label>
-                    <input type="text" name="pais" placeholder="Argentina" value="Argentina" required>
+                    <label>País</label>
+                    <input type="text" name="pais" placeholder="Ingrese el país" required>
                 </div>
-    
+  
                 <!-- Botón principal (mismo estilo que "Iniciar sesión") -->
                   <button class="btn-verde"><a class="IniciarSesion" href="index.html">Registrarse</a></button>
             </form>
@@ -101,10 +103,7 @@
           <div class="footer-logo">
             <img class="logo-footer" src="imagenes/logo simplificado editado.png" alt="Logo">
           </div>
-     
-
-
-
+    
 
           <div class="redes-numero">
           <div class="footer-redes">
