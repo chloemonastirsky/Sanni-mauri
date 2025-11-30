@@ -103,6 +103,28 @@ header nav div, header nav{
     margin-top: 25px;
   }
   
+  /* Código a agregar en tu archivo style.css */
+
+.titulo-plato-link {
+    /* Quita la línea de subrayado */
+    text-decoration: none; 
+    /* Asegura que el color de texto se mantenga como el h3, no como el enlace por defecto */
+    color: inherit; 
+}
+
+/* Opcional: Para cuando el usuario pasa el ratón por encima (hover) */
+.titulo-plato-link:hover {
+    /* Puedes cambiar el color del texto si quieres un efecto al pasar el mouse */
+    color: #38761d; /* Ejemplo de un verde oscuro */
+    /* Asegura que no aparezca el subrayado al pasar el ratón */
+    text-decoration: none; 
+}
+
+/* Agrega esto a tu archivo style.css */
+.promo a img {
+    border: none;
+    outline: none;
+}
   
   
   
@@ -135,8 +157,8 @@ header nav div, header nav{
   
   
   .x {
-    width: 70px;
-    height: 50px;
+    width: 200px;
+    height: 70px;
    
   }
   
@@ -888,8 +910,8 @@ estrellas {
     right: 18px;
     top: 50%;
     transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 25px;
 }
 .titulo-restricciones {
     font-size: 22px;
@@ -1298,6 +1320,7 @@ estrellas {
   padding: 0 10px;
 }
 
+
 /* Botón principal - Iniciar Sesión */
 .btn-principal {
   display: block;
@@ -1348,6 +1371,89 @@ estrellas {
   box-shadow: 0 12px 25px rgba(74, 150, 63, 0.5);
 }
 
+/* --- ESTILO PARA EL SLOGAN FINAL EN EL LANDING --- */
+.landing-main .titulo-promos {
+  /* Tipografía */
+  font-family: 'Poppins', sans-serif; /* Mantiene la consistencia con otros títulos */
+  font-size: 28px; /* Tamaño prominente, similar a "Ofertones" */
+  font-weight: 800; /* Extra-negrita para énfasis */
+  
+  /* Color */
+  color: #2e7d32; /* Verde oscuro de los títulos principales */
+  
+  /* Espaciado y alineación */
+  text-align: center;
+  margin: 30px auto 30px; /* Espaciado generoso, centrado */
+  max-width: 400px; /* Limita el ancho para mejor lectura en una línea */
+  line-height: 1.2;
+}
+
+/* Ajuste para desktop si tienes media querys */
+@media (min-width: 992px) {
+  .landing-main .titulo-promos {
+    font-size: 38px;
+    margin-bottom: 40px;
+    max-width: 600px; /* Más ancho en escritorio */
+  }
+}
+
+/* --- ESTILO PARA EL SLOGAN FINAL EN EL LANDING (Menos llamativo) --- */
+.landing-main .titulo-seccion {
+  /* Tipografía */
+  font-family: 'Poppins', sans-serif; 
+  font-size: 22px; /* Reducido de 28px a 22px */
+  font-weight: 600; /* Reducido de 800 (Extra-negrita) a Semi-negrita */
+  
+  /* Color */
+  color: #4A963F; /* Verde principal de Sanni, menos oscuro que el #2e7d32 */
+  
+  /* Espaciado y alineación */
+  text-align: center;
+  margin: 50px auto 30px; 
+  max-width: 400px; 
+  line-height: 1.2;
+}
+
+/* Ajuste para desktop */
+@media (min-width: 992px) {
+  .landing-main .titulo-seccion {
+    font-size: 30px; /* Reducido de 38px a 30px */
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+}
+/* --- BOTÓN CONÓCENOS (Estilo modificado) --- */
+
+.btn-conocenos {
+  /* Propiedades de visualización y alineación */
+  display: inline-block;
+  
+  /* Colores */
+  background: #C8E6C9; /* Verde muy claro (similar a un fondo de sección) */
+  color: #2E7D32; /* Texto en verde oscuro para contraste */
+  
+  /* Tipografía */
+  font-size: 19px;
+  font-weight: 700; /* Un poco más de peso */
+  
+  /* Espaciado y Forma */
+  padding: 14px 35px; /* Relleno adecuado */
+  border: 3px solid #6DBE64; /* Borde sutil del color intermedio */
+  border-radius: 8px; /* Menos redondo que un óvalo */
+  text-decoration: none;
+  
+  /* Sombra sutil y transición */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.btn-conocenos:hover {
+  background: #A5D6A7; /* Verde claro más oscuro (para el efecto) */
+  color: #1B5E20; /* Texto más oscuro */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
 
 .imagen-landing{
   width: 100%;
@@ -1362,9 +1468,9 @@ estrellas {
 /* Título "Ofertones" */
 .ofertones {
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 700;
   color: #2e7d32;
-  margin: 40px 0 30px 0;
+  margin: 50px 0 10px 0;
 }
 
 /* Botones secundarios (Restricciones y Restaurantes) */
