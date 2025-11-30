@@ -916,7 +916,7 @@ estrellas {
 .titulo-restricciones {
     font-size: 22px;
     font-weight: bold;
-    color: #333;
+    color: #224d21;
     margin-bottom: 50px;
     max-width: 320px;
     margin-left: auto;
@@ -951,6 +951,79 @@ estrellas {
     color: #333;
     font-weight: 500;
     margin: 0;
+}
+
+/* Estilo para los enlaces de nombres de restaurante */
+.nombre-restaurante-link {
+    /* Elimina el subrayado */
+    text-decoration: none; 
+    /* Hereda el color del texto del h2, no el azul de enlace */
+    color: inherit; 
+}
+
+.nombre-restaurante-link:hover {
+    /* Asegura que no se subraye al pasar el ratón */
+    text-decoration: none;
+    /* Opcional: añade un pequeño efecto de color al pasar el ratón */
+    /* color: #4A963F; /* (Color Verde Sanni) */
+}
+
+/* Agrega o verifica esto en tu style.css */
+
+.promo-link {
+    /* Elimina el subrayado en el texto de los enlaces */
+    text-decoration: none; 
+    /* Asegura que el enlace ocupe todo el espacio del contenedor */
+    display: block;
+    /* Hereda el color del texto si es necesario, aunque aquí solo aplicaría a h2 y p */
+    color: inherit; 
+}
+
+/* ============================================================= */
+/* ====================== EFECTO HOVER PARA PROMO CARD ========= */
+/* ============================================================= */
+
+.promo-card {
+    /* Es crucial tener una transición suave para que el efecto no sea brusco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* (Asegúrate de que .promo-card ya tenga un fondo, borde, ocupe espacio, etc.,
+       para que este efecto se vea bien.) */
+}
+
+.promo-card:hover {
+    /* 1. Hace que la tarjeta "salga" ligeramente de la pantalla */
+    transform: translateY(-4px); 
+    /* 2. Añade una sombra suave para un efecto 3D */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    /* 3. Opcional: Cambia el color del fondo sutilmente (si tiene fondo definido) */
+    /* background-color: #f5f5f5; */
+    cursor: pointer; /* Muestra el cursor de puntero (mano) */
+}
+
+/* Opcional: Asegura que el nombre del restaurante mantenga su estilo en hover
+   (Si ya aplicaste los estilos anteriores para .nombre-restaurante-link, esto no es necesario,
+   pero lo incluimos por si acaso) */
+.promo-card:hover .nombre-restaurante-link {
+    color: #b3f596; /* Oscurece el texto del enlace dentro de la tarjeta */
+    text-decoration: none;
+}
+
+/* Efecto hover para las tarjetas de promoción (donde están las imágenes) */
+.promo:hover {
+    /* Agrega una sombra sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    /* Opcional: una leve traslación hacia arriba para un efecto 3D */
+    transform: translateY(-2px); 
+    /* Asegura una transición suave del efecto */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+/* Además, aseguramos que la imagen dentro del enlace no tenga bordes extra */
+.promo a img {
+    border: none;
+    outline: none;
+    /* Para que la imagen se adapte bien al efecto de la tarjeta */
+    transition: transform 0.3s ease; 
 }
 
 
@@ -1482,6 +1555,13 @@ estrellas {
   margin: 0 auto;
 }
 
+.slogan {
+  font-size: 28px;
+  font-weight: 650;
+  color: #2e7d32;
+  margin: 0 0 40px 0;
+}
+
 .btn-secundario {
   background: white;
   color: #2e7d32;
@@ -1999,6 +2079,105 @@ estrellas {
   font-weight: bold;
 }
 
+/* ============================================================= */
+/* ====================== QUIENES SOMOS (BASE: WEB) ============= */
+/* ============================================================= */
+
+.quienes-somos-main {
+    padding: 40px; /* Base Web: más padding */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.quienes-somos-container {
+    padding: 0;
+}
+
+/* Título Principal */
+.titulo-quienes-somos {
+    color: #4A963F;
+    font-weight: 700;
+    font-size: 42px; /* Base Web: más grande */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Subtítulos de Secciones (Misión, Visión, Motivación, Equipo, Valores) */
+.subtitulo-seccion-sanni {
+    color: #4A963F;
+    font-weight: 600;
+    font-size: 26px; /* Base Web: más grande */
+    margin-bottom: 15px;
+}
+
+/* Párrafos */
+.seccion-mision-vision p,
+.seccion-motivacion p,
+.valor-item p {
+    font-size: 16px; /* Base Web: ligeramente más grande */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Divisores */
+.divider-sanni {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
+}
+
+/* Sección Misión/Visión y Valores en Web: Los estilos de Bootstrap ya ayudan */
+.seccion-mision-vision .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.valor-item {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    height: 100%; /* Asegura consistencia en grid */
+}
+
+.valor-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nombre-valor {
+    color: #4A963F;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* Sección Equipo */
+.seccion-equipo {
+    text-align: center;
+}
+
+.equipo-miembro {
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.nombre-miembro {
+    color: #333;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.rol-miembro {
+    color: #777;
+    font-style: italic;
+    font-size: 14px;
+}
+
 
 
 /* -------------------------------------------------------------------------------------------------------------------------MEDIA----------------------------------
@@ -2325,6 +2504,54 @@ estrellas {
                 font-size: 34px;
                 letter-spacing: 3px;
             }
+
+            .quienes-somos-main {
+        padding: 20px; /* Menos padding en mobile */
+    }
+
+    /* Título Principal */
+    .titulo-quienes-somos {
+        font-size: 28px; /* Reducir tamaño de título */
+        margin-bottom: 25px;
+    }
+
+    /* Subtítulos */
+    .subtitulo-seccion-sanni {
+        font-size: 22px; /* Reducir tamaño de subtítulos */
+        margin-top: 15px;
+    }
+
+    /* Párrafos */
+    .seccion-mision-vision p,
+    .seccion-motivacion p,
+    .valor-item p {
+        font-size: 15px;
+    }
+
+    /* Misión y Visión, forzar que se apilen */
+    .seccion-mision-vision .row {
+        display: block;
+    }
+
+    .seccion-mision-vision .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    /* Valores */
+    .valor-item {
+        padding: 15px 10px;
+        height: auto; /* Dejar que la altura se ajuste */
+    }
+
+    .nombre-valor {
+        font-size: 18px;
+    }
+
+    /* Equipo */
+    .equipo-miembro {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
 
             /* ============================================================= */
 /* ======================== MÓVIL = 600px ======================= */
