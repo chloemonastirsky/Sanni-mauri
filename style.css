@@ -337,7 +337,9 @@ estrellas {
     padding: 8px 0;
     overflow-x: auto;
     scrollbar-width: none;
-    max-width: 420px;
+    width: 100%;
+    margin-left: 38%;
+
 }
 
 /* .categorias::-webkit-scrollbar { display: none; } */
@@ -1179,6 +1181,12 @@ estrellas {
     border: 5px solid white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
+.icono-gift img{
+  width: 25%;
+  height: auto;
+  margin-left:-7%;
+}
 .perfil-foto-circulo img {
     width: 100%;
     height: 100%;
@@ -1215,7 +1223,7 @@ estrellas {
     display: block;
 }
 .btn-cerrar {
-    background-color: #6AB55A !important;
+    background-color: #ff1d1d !important;
 }
 /* FOOTER VERDE */
 .footer-perfil {
@@ -1252,8 +1260,13 @@ estrellas {
     height: 28px;
 }
 
-.fotito{
-  width: 40px;
+.fotito img{
+  width: 60px;
+  height: auto;
+}
+.limonchetti-foto{
+  width:80px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .restriccion, .IniciarSesion{
@@ -1355,6 +1368,12 @@ estrellas {
   font-weight: bolder;
 }
 
+.nombre-Chat, .mensaje-bot-p, .mensaje-user-p, footer h6, .titulo-fav, .titulo-plato-fav, .precio, .titulo-restri, .titulo-seccion, .etiqueta-promo, .tituloIndex, .descripcion-landing {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+
 /* ============================================================= */
 /* ====================== LANDING / INDEX ====================== */
 /* ============================================================= */
@@ -1389,6 +1408,7 @@ estrellas {
   color: #2e7d32;
   margin: 0 0 20px 0;
   line-height: 1.1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Descripción */
@@ -1468,12 +1488,19 @@ estrellas {
   line-height: 1.2;
 }
 
+
+
 /* Ajuste para desktop si tienes media querys */
 @media (min-width: 992px) {
   .landing-main .titulo-promos {
     font-size: 38px;
     margin-bottom: 40px;
     max-width: 600px; /* Más ancho en escritorio */
+  }
+  .icono-gift img{
+    width: 17%;
+    height: auto;
+    margin-left:-5%;
   }
 }
 
@@ -1829,7 +1856,7 @@ estrellas {
   color: #ffffff;
   margin-top: 18px;
   width: 78%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .promo-nombre {
@@ -1886,10 +1913,7 @@ estrellas {
   gap: 12px;
   margin-bottom: 20px;
 }
-.flecha-volver-resto img {
-  width: 53px;
-  height: 40px;
-}
+
 .buscador-resto {
   position: relative;
   flex: 1;
@@ -2242,7 +2266,10 @@ estrellas {
   .pagina-notificaciones { 
     padding: 15px 15px 60px; }
         
-  
+  .categorias{
+    width: 100%;
+    margin-left: 5%;
+  }
   
   header nav div, header nav{
     background-color: #4A963F;
@@ -2760,44 +2787,7 @@ estrellas {
     
 
   
-  /* ============================================================= */
-/* ====================== index ======================= */
-/* ============================================================= */
-/* ============================================================= */
-/* ====================== VERSIÓN WEB (más de 600px) ============ */
-/* ============================================================= */
-@media (min-width: 600px) {
-  .tituloIndex {
-      font-size: 52px;
-  }
-  
-  .descripcion-landing {
-      font-size: 20px;
-      color: #204114;
-      font-weight: bold;
-  }
-  
-  .logo-landing {
-      width: 220px;
-  }
-  
-  .btn-principal {
-      font-size: 24px;
-      padding: 20px 60px;
-  }
-  
-  .botones-secundarios {
-      flex-direction: row;
-      justify-content: center;
-      gap: 30px;
-  }
-  
-  .btn-secundario {
-      flex: 1;
-      max-width: 280px;
-  }
-}
-
+ 
 
 }
         

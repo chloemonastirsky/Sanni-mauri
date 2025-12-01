@@ -51,10 +51,11 @@
 <main class="chat-main">
 
   <div class="chat-header">
-    <div class="chat-flecha" onclick="history.back()"><img class="fotito" src="imagenes/flecha verde izquierda.png" alt=""></div>
+    
     <h1 class="chat-titulo">
-        <img src="imagenes/limo.png" alt="Limonchetti" class="fotito">
-        Limonchetti
+      <div class="fotito" onclick="history.back()"><img  src="imagenes/flecha verde izquierda.png" alt=""></div>
+        <img src="imagenes/limo.png" alt="Limonchetti" class="limonchetti-foto">
+        <p class="nombre-Chat">Limonchetti</p>
     </h1>
 </div>
 
@@ -66,9 +67,9 @@
         <!-- MENSAJE DEL BOT -->
         <div class="mensaje-bot">
             <div class="burbuja-bot">
-                ¡Hola!<br>
-                ¿En qué podemos ayudarte hoy?<br>
-                Déjanos saber qué necesitas y estaremos encantados de asistirte.
+                <p class="mensaje-bot-p">¡Hola!<br>
+                  ¿En qué podemos ayudarte hoy?<br>
+                  Déjanos saber qué necesitas y estaremos encantados de asistirte.</p>
             </div>
         </div>
 
@@ -76,7 +77,7 @@
         <!-- MENSAJE DEL USUARIO -->
         <div class="mensaje-user">
             <div class="burbuja-user">
-                Buenos días, he tenido problemas con la cancelación de un pedido que hice ayer. La compra no se efectuó pero la notificación saltó.
+                <p class="mensaje-user-p">Buenos días, he tenido problemas con la cancelación de un pedido que hice ayer. La compra no se efectuó pero la notificación saltó.</p>
             </div>
         </div>
 
