@@ -50,35 +50,33 @@
   </header>
 
   <main class="restaurantes-page">
+     <!-- TÍTULO -->
+     <div class="fotito" onclick="history.back()"><img  src="imagenes/flecha verde izquierda.png" alt=""></div>
+     <h1 class="titulo-restaurantes">Restaurantes</h1>
 
-    <!-- BARRA SUPERIOR: FLECHA + BUSCADOR + BOTONES -->
-    <div class="top-bar-restaurantes">
-      <a href="javascript:history.back()" class="flecha-volver-resto">
-        <img src="imagenes/flecha verde izquierda.png" alt="Volver">
-      </a>
+     <!-- BARRA DE BÚSQUEDA -->
+     <form class="buscador-restricciones">
+      <input type="text" placeholder="Buscar..." class="input-busqueda">
+  <a href="FiltroRestricciones.html">
+  <img src="imagenes/iconoLupa.png" alt="Buscar" class="lupa-busqueda">
+  </a>    
+</form>
   
-      <div class="buscador-resto">
-        <input type="text" placeholder="Buscar..." class="input-buscador-resto">
-          <a href="Restaurante.html"><img class="lupa-busqueda" src="imagenes/iconoLupa.png" alt="lupa"></a>
-      </div>
-    </div>
-  
-   <div class="botones-filtros-extra">
+   <!-- <div class="botones-filtros-extra">
     <a href="Restricciones.html" class="btn-filtro-extra">
         <span>Categorías</span>
     </a>
-</div>
+</div> -->
   
     <!-- BARRA DE FILTROS PRINCIPALES -->
-    <div class="categorias">
+    <!-- <div class="categorias">
       <button >Barato</button>
       <button >Destacado</button>
       <button >Promos</button>
       <button >Con descuento</button>
-    </div>
+    </div> -->
   
-    <!-- TÍTULO -->
-    <h1 class="titulo-restaurantes">RESTAURANTES</h1>
+   
   
     <!-- LISTADO DE RESTAURANTES -->
     <div class="lista-restaurantes">

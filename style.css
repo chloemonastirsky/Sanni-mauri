@@ -237,6 +237,15 @@ header nav div, header nav{
     transition: left 0.3s ease-in-out; /* Transición para entrada/salida */
   }
   
+  .buscador-resto {
+    position: relative;
+    flex: 1;
+    width: 70%;
+    margin-left: 30%;
+    margin-bottom: -8%;
+    margin-top: 3%;
+                                                                                                                        /* AAC */
+  }
   
   /* --- Estado visible del overlay --- */
   .overlay.active {
@@ -488,7 +497,177 @@ estrellas {
   
   
   
-  
+  /* ====================== CHAT - VERSIÓN WEB (MEJORADA Y ORIGINAL) ====================== */
+
+.chat-main {
+  background: linear-gradient(135deg, #e8f5e9 0%, #f8fff8 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header del chat (con foto del restaurante) */
+.chat-header {
+  background: #fff8e8;
+  padding: 20px 25px;
+  box-shadow: 0 4px 15px rgba(74,150,63,0.15);
+  position: relative;
+  z-index: 10;
+}
+
+.chat-titulo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.limonchetti-foto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid #4A963F;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nombre-Chat {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Contenedor de mensajes con scroll suave */
+.chat-contenedor {
+  flex: 1;
+  padding: 25px 30px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="%234A963F20"/></svg>') repeat;
+  background-size: 80px;
+}
+
+/* Burbujas con cola tipo WhatsApp real */
+.mensaje-bot, .mensaje-user {
+  display: flex;
+  max-width: 80%;
+}
+
+.mensaje-bot { align-self: flex-start; }
+.mensaje-user { align-self: flex-end; }
+
+.burbuja-bot, .burbuja-user {
+  padding: 14px 20px;
+  border-radius: 20px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  animation: aparecer 0.4s ease;
+}
+
+.burbuja-bot {
+  background: #4A963F;
+  color: white;
+  border-bottom-left-radius: 4px;
+  margin-left: 12px;
+}
+
+.burbuja-bot::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 12px solid #4A963F;
+  border-left: 12px solid transparent;
+}
+
+.burbuja-user {
+  background: #2E7D32;
+  color: white;
+  border-bottom-right-radius: 4px;
+  margin-right: 12px;
+}
+
+.burbuja-user::before {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 12px solid #2E7D32;
+  border-right: 12px solid transparent;
+}
+
+/* Animación de aparición */
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Barra inferior fija */
+.chat-barra-inferior {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 18px 25px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.chat-input-grande {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 50px;
+  padding: 8px 15px;
+  gap: 15px;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.texto-escribir {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px 0;
+  resize: none;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.boton-enviar {
+  background: #4A963F;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(74,150,63,0.4);
+}
+
+.boton-enviar:hover {
+  background: #388e3c;
+  transform: scale(1.1);
+}
+
+.boton-enviar img {
+  width: 26px;
+  filter: brightness(0) invert(1);
+}
   
   
   
@@ -655,12 +834,12 @@ estrellas {
   height: 40px;
   cursor: pointer;
 }
-.header-favoritos h2 {
+/* .header-favoritos h2 {
   font-size: 28px;
   color: #4caf50;
   font-weight: bold;
   margin: 0;
-}
+} */
 
 /* Cada plato favorito */
 .plato-favorito {
@@ -927,8 +1106,8 @@ estrellas {
     /* margin-right: auto; */
     
     line-height: 1.1;
-    font-size: 52px;
-    font-weight: 900;
+    font-size: 32px;
+    font-weight: 700;
     color: #2e7d32;
 }
 .grid-restricciones {
@@ -1162,12 +1341,38 @@ estrellas {
 .perfil-tarjeta {
     background-color: #f9f6ee;
     margin: 30px auto;
-    max-width: 380px;
+    /* width:20%; */
+    /* max-width: 380px; */
     border-radius: 30px;
     padding: 30px 20px;
     text-align: center;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-cata-callate{
+  background-color: #f9f6ee;
+    margin: 30px auto;
+    width:20%;
+    /* max-width: 380px; */
+    border-radius: 30px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 600px){
+  .perfil-cata-callate{
+    width: 60%;
+  }
+}
+.perfil-main{
+  display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -1264,10 +1469,13 @@ estrellas {
   width: 60px;
   height: auto;
 }
-.limonchetti-foto{
+/* .limonchetti-foto{
   width:80px;
-  border-radius: 20px 20px 20px 20px;
-}
+  border-radius: 40px 40px 40px 40px;
+  border: solid rgb(251, 231, 123) 3px;
+  margin-left: 5%;
+  margin-top:-4%;
+} */
 
 .restriccion, .IniciarSesion{
   text-decoration: none;
@@ -1418,7 +1626,38 @@ estrellas {
   line-height: 1.6;
   margin-bottom: 40px;
   padding: 0 10px;
+  width: 190%;
+  margin-left:-45%;
 }
+
+.tituloIndex{
+  width: 120%;
+  margin-left: -10%;
+}
+
+/* .contenedor-promos{
+  width:170%;
+  
+} */
+.seccionLanding{
+  width:170%;
+  margin-left: -35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Botón principal - Iniciar Sesión */
@@ -1479,7 +1718,7 @@ estrellas {
   font-weight: 800; /* Extra-negrita para énfasis */
   
   /* Color */
-  color: #2e7d32; /* Verde oscuro de los títulos principales */
+  color: #256228; /* Verde oscuro de los títulos principales */
   
   /* Espaciado y alineación */
   text-align: center;
@@ -1487,6 +1726,39 @@ estrellas {
   max-width: 400px; /* Limita el ancho para mejor lectura en una línea */
   line-height: 1.2;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1574,7 +1846,7 @@ estrellas {
 
 /* Título "Ofertones" */
 .ofertones {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
   color: #2e7d32;
   margin: 50px 0 10px 0;
@@ -1602,10 +1874,11 @@ estrellas {
 }
 
 .slogan {
-  font-size: 28px;
+  font-size:38px;
   font-weight: 650;
   color: #2e7d32;
   margin: 0 0 40px 0;
+  /* width: 130%; */
 }
 
 .btn-secundario {
@@ -1856,7 +2129,9 @@ estrellas {
   color: #ffffff;
   margin-top: 18px;
   width: 78%;
-  margin-left: 5%;
+  margin-left:9%;
+  font-size: 21px;
+  padding: 18px;
 }
 
 .promo-nombre {
@@ -1914,22 +2189,19 @@ estrellas {
   margin-bottom: 20px;
 }
 
-.buscador-resto {
-  position: relative;
-  flex: 1;
-  width: 70%;
-  margin-left: 15%;
-  margin-bottom: -15%;
-  margin-top: 5%;
-}
+
 .input-buscador-resto {
-  width: 100%;
-  padding: 14px 50px 14px 18px;
+  width: 60%;
+  padding: 14px 50px 14px 28px;
   border: 2px solid #ddd;
   border-radius: 30px;
   font-size: 16px;
   background: #f9f9f9;
+  margin-bottom: 12%;
+  margin-top: -5%;
 }
+
+
 .lupa-resto {
   position: absolute;
   right: 16px;
@@ -1987,13 +2259,37 @@ estrellas {
 }
 
 /* Título */
-.titulo-restaurantes {
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px 0 25px;
-  color: #333;
-  text-transform: uppercase;
+.titulo-restaurantes, .Promos, .Promos2 {
+  font-size: 42px !important;;
+  font-weight: 600 !important;;
+  color: #2e7d32 !important;;
+  /* margin: 0 0 20px 0; */
+  /* line-height: 1.1; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;;
+  /* font-size: 28px; */
+  /* font-weight: bold; */
+  text-align: center !important;;
+  /* margin: 10px 0 25px; */
+  /* color: #333; */
+  text-transform: uppercase !important;;
+  margin-bottom: 1%!important;; 
+
+
+}
+
+@media(max-width: 600px){
+  .categorias{
+    margin-left:10% ;
+  }
+}
+
+.Promos{
+  margin-top:-2%;
+  margin-bottom: 1%;
+}
+.Promos2{
+  margin-top:2%;
+  margin-bottom:2%;
 }
 
 /* Tarjeta de restaurante */
@@ -2260,16 +2556,93 @@ estrellas {
     .plato{
       background-color: #fff8e8;
     }
+    .descripcion-landing {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      padding: 0 10px;
+      width: 100%;
+      margin-left: 3%;
+    }
 
+    
 
+    .buscador-resto{
+      width: 50%;
+    }
+/*      
+@media (max-width: 600px) {
 
+    /* ====================== CHAT - VERSIÓN MÓVIL (SUPER LINDO) ====================== */
+
+    .chat-main {
+      background: linear-gradient(to bottom, #f8fff8, #e8f5e9);
+  }
+
+  .chat-header {
+      padding: 15px 18px;
+      box-shadow: 0 3px 12px rgba(74,150,63,0.2);
+  }
+
+  .chat-titulo {
+      gap: 14px;
+      font-size: 22px;
+  }
+
+  .limonchetti-foto {
+      width: 56px;
+      height: 56px;
+      border: 3px solid #4A963F;
+  }
+
+  .nombre-Chat {
+      font-size: 20px;
+  }
+
+  .chat-contenedor {
+      padding: 20px 15px;
+      gap: 16px;
+      background-size: 60px;
+  }
+
+  .burbuja-bot, .burbuja-user {
+      padding: 12px 16px;
+      font-size: 15px;
+      max-width: 85%;
+  }
+
+  .chat-barra-inferior {
+      padding: 14px 18px;
+  }
+
+  .chat-input-grande {
+      padding: 6px 12px;
+      gap: 12px;
+  }
+
+  .texto-escribir {
+      font-size: 15.5px;
+  }
+
+  .boton-enviar {
+      width: 44px;
+      height: 44px;
+  }
+
+  .boton-enviar img {
+      width: 24px;
+  }
+
+  /* Efecto de "escribiendo..." opcional */
+  .texto-escribir:focus + .boton-enviar {
+      background: #388e3c;
+  }
+}                                                                                                    
   .pagina-notificaciones { 
     padding: 15px 15px 60px; }
         
-  .categorias{
-    width: 100%;
-    margin-left: 5%;
-  }
+  
   
   header nav div, header nav{
     background-color: #4A963F;
@@ -2495,9 +2868,9 @@ estrellas {
     .header-favoritos {
         margin-bottom: 20px;
     }
-    .header-favoritos h2 {
+    /* .header-favoritos h2 {
         font-size: 24px;
-    }
+    } */
     .flecha-volver {
         width: 50px;
         height: 36px;
@@ -2784,12 +3157,17 @@ estrellas {
         width: 24px;
     }
 
-    
+      /* @media (min-width:600px){
+        .categorias{
+          width: 100%;
+          margin-left: 33%;
+        }
+      } */
 
   
  
 
-}
+
         
           
   
