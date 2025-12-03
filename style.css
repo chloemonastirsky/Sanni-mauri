@@ -774,6 +774,13 @@ estrellas {
     visibility: visible;
 }
 
+/* Eliminación del subrayado de los platos favoritos */
+.lista-favoritos a {
+  text-decoration: none; /* Línea de adición: Elimina el subrayado por defecto */
+  color: inherit; /* Opcional: Asegura que el color del texto dentro del enlace herede el color del padre, 
+                     evitando el color azul por defecto de los enlaces. */
+}
+
 /* Reutilizamos tu clase .modal pero la centramos y la hacemos bonita */
 #modalCupon {
     position: fixed;
@@ -801,6 +808,9 @@ estrellas {
     opacity: 1;
     visibility: visible;
 }
+
+
+
   
   
   
@@ -1635,7 +1645,7 @@ estrellas {
   margin-left: -10%;
 }
 
-/* .contenedor-promos{
+/* .contenedor-Promos2{
   width:170%;
   
 } */
@@ -2260,7 +2270,7 @@ estrellas {
 
 /* Título */
 .titulo-restaurantes, .Promos, .Promos2 {
-  font-size: 42px !important;;
+  font-size: 40px !important;;
   font-weight: 600 !important;;
   color: #2e7d32 !important;;
   /* margin: 0 0 20px 0; */
