@@ -3157,6 +3157,27 @@ estrellas {
         width: 24px;
     }
 
+    @media (max-width: 600px) {
+    /* 1. Anular el padding lateral del contenedor principal. */
+    .seccionLanding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    /* 2. Eliminar completamente el padding lateral del contenedor del carrusel. 
+       Esto hace que la primera tarjeta pegue en el borde. */
+    .contenedor-promos {
+        padding: 8px 0; /* Línea de modificación: Elimina los 16px de padding lateral. */
+        gap: 0; /* Opcional: Elimina el espacio entre las tarjetas si lo deseas. */
+    }
+
+    /* 3. Ajustar el ancho de las tarjetas al 100% del viewport menos el gap (si lo dejas). 
+       Usaremos un valor muy alto para que sea lo más ancho posible. */
+    .promo { 
+        /* Usamos 100vw para que la tarjeta ocupe todo el ancho de la pantalla */
+        width: 100vw; /* Línea de modificación: Máxima compactación horizontal. */
+    }
+}
       /* @media (min-width:600px){
         .categorias{
           width: 100%;
