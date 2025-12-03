@@ -676,7 +676,7 @@ estrellas {
   
   
   
-  .seccion, .seccionLanding { padding: 20px 16px; background: white; margin-bottom: 12px; }
+  .seccion, .seccionLanding { padding: 60px 42px; background: white; margin-bottom: 12px; }
 .tituloSeccion { font-size: 22px; font-weight: bold; margin: 0 0 16px 8px; color: #333; text-transform: uppercase; }
 .seccionLanding{
   background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
@@ -1640,8 +1640,8 @@ estrellas {
   
 } */
 .seccionLanding{
-  width:170%;
-  margin-left: -35%;
+  width:130%;
+  margin-left: -14%;
 }
 
 
@@ -3156,28 +3156,6 @@ estrellas {
     .footer-telefono img {
         width: 24px;
     }
-
-    @media (max-width: 600px) {
-    /* 1. Anular el padding lateral del contenedor principal. */
-    .seccionLanding {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    /* 2. Eliminar completamente el padding lateral del contenedor del carrusel. 
-       Esto hace que la primera tarjeta pegue en el borde. */
-    .contenedor-promos {
-        padding: 8px 0; /* Línea de modificación: Elimina los 16px de padding lateral. */
-        gap: 0; /* Opcional: Elimina el espacio entre las tarjetas si lo deseas. */
-    }
-
-    /* 3. Ajustar el ancho de las tarjetas al 100% del viewport menos el gap (si lo dejas). 
-       Usaremos un valor muy alto para que sea lo más ancho posible. */
-    .promo { 
-        /* Usamos 100vw para que la tarjeta ocupe todo el ancho de la pantalla */
-        width: 100vw; /* Línea de modificación: Máxima compactación horizontal. */
-    }
-}
       /* @media (min-width:600px){
         .categorias{
           width: 100%;
