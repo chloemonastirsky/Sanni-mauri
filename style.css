@@ -142,27 +142,17 @@ header nav div, header nav{
   /* Íconos de redes */
   .footer-redes {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
   }
   
   
   
-  
-  .ig, .tt {
-    width: 45px;
-    height: 45px;
-    /* cursor: pointer; */
-  }
-  
-  
-  
-  
-  .x {
-    width: 200px;
-    height: 70px;
-   
-  }
+  .ig, .tt, .x {
+    width: 45px !important; /* Línea de modificación/adición: Fuerza el ancho */
+    height: 45px !important; /* Línea de modificación/adición: Fuerza la altura */
+    object-fit: contain; /* Asegura que la imagen de X se escale correctamente sin deformarse */
+}
   
   
   
